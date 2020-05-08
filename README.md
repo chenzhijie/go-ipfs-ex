@@ -3,7 +3,7 @@
 English | [中文](README_CN.md)
 ## What is IPFS-eX
 
-IPFS-eX is a implementation that uses [DSP] (https://github.com/DSP-Labs/dsp) protocol to upgrade [IPFS] (https://github.com/ipfs/ipfs/) protocol network Storage protocol, the goal is to bring more key protocol capabilities such as distribute data actively, file encryption, and permission control to the IPFS network, and ultimately establish a more complete distributed storage alternative network.
+IPFS-eX is a implementation that uses [DSP](https://github.com/DSP-Labs/dsp) protocol to upgrade [IPFS](https://github.com/ipfs/ipfs/) protocol network Storage protocol, the goal is to bring more key protocol capabilities such as distribute data actively, file encryption, and permission control to the IPFS network, and ultimately establish a more complete distributed storage alternative network.
 
 # Table of Contents
 
