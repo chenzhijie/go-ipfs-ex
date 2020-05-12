@@ -20,7 +20,7 @@ import (
 	loader "github.com/ipfs/go-ipfs/plugin/loader"
 	repo "github.com/ipfs/go-ipfs/repo"
 	fsrepo "github.com/ipfs/go-ipfs/repo/fsrepo"
-	util "github.com/ipfs/go-ipfs/shell/ipfs/util"
+	util "github.com/ETHFSx/go-ipfs/shell/ipfs/util"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	"github.com/ipfs/go-ipfs-cmds/cli"
