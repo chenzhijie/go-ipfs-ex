@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ipfs/go-bitswap"
-	"github.com/ipfs/go-bitswap/network"
+	"github.com/ETHFSx/go-bitswap"
+	"github.com/ETHFSx/go-bitswap/network"
 	"github.com/ipfs/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"

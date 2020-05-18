@@ -8,8 +8,8 @@ import (
 	e "github.com/ipfs/go-ipfs/core/commands/e"
 
 	humanize "github.com/dustin/go-humanize"
-	bitswap "github.com/ipfs/go-bitswap"
-	decision "github.com/ipfs/go-bitswap/decision"
+	bitswap "github.com/ETHFSx/go-bitswap"
+	decision "github.com/ETHFSx/go-bitswap/decision"
 	cidutil "github.com/ipfs/go-cidutil"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	peer "github.com/libp2p/go-libp2p-core/peer"

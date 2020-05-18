@@ -2,6 +2,7 @@ module github.com/ETHFSx/go-ipfs
 
 require (
 	bazil.org/fuse v0.0.0-20200117225306-7b5117fecadc
+	github.com/ETHFSx/go-bitswap v0.2.15-rc.0
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/bren2010/proquint v0.0.0-20160323162903-38337c27106d
 	github.com/cheekybits/is v0.0.0-20150225183255-68e9c0620927
@@ -14,7 +15,7 @@ require (
 	github.com/gogo/protobuf v1.3.1
 	github.com/hashicorp/go-multierror v1.1.0
 	github.com/hashicorp/golang-lru v0.5.4
-	github.com/ipfs/go-bitswap v0.2.13
+	//github.com/ipfs/go-bitswap v0.2.13
 	github.com/ipfs/go-block-format v0.0.2
 	github.com/ipfs/go-blockservice v0.1.3
 	github.com/ipfs/go-cid v0.0.5
