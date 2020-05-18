@@ -6,7 +6,7 @@ import (
 
 	ncmd "github.com/ETHFSx/go-ipfs/core/commands/name"
 	namesys "github.com/ETHFSx/go-ipfs/namesys"
-	nsopts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
+	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 )

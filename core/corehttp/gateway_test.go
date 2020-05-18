@@ -21,9 +21,9 @@ import (
 	config "github.com/ipfs/go-ipfs-config"
 	files "github.com/ipfs/go-ipfs-files"
 	path "github.com/ipfs/go-path"
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	nsopts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
-	ipath "github.com/ipfs/interface-go-ipfs-core/path"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
+	ipath "github.com/ETHFSx/interface-go-ipfs-core/path"
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	id "github.com/libp2p/go-libp2p/p2p/protocol/identify"
 )

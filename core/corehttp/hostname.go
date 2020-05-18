@@ -17,9 +17,9 @@ import (
 	mbase "github.com/multiformats/go-multibase"
 
 	config "github.com/ipfs/go-ipfs-config"
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
-	nsopts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
 )
 
 var defaultPaths = []string{"/ipfs/", "/ipns/", "/api/", "/p2p/", "/version"}

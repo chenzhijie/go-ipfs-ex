@@ -6,7 +6,7 @@ import (
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	"github.com/ipfs/go-merkledag/dagutils"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 
 	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 )

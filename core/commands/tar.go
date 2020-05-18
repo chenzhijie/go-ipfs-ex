@@ -9,7 +9,7 @@ import (
 
 	"github.com/ipfs/go-ipfs-cmds"
 	dag "github.com/ipfs/go-merkledag"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 )
 
 var TarCmd = &cmds.Command{

@@ -12,9 +12,9 @@ import (
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	unixfs "github.com/ipfs/go-unixfs"
 	unixfs_pb "github.com/ipfs/go-unixfs/pb"
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 )
 
 // LsLink contains printable data for a single ipld link in ls output

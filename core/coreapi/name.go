@@ -10,9 +10,9 @@ import (
 	"github.com/ETHFSx/go-ipfs/namesys"
 
 	ipath "github.com/ipfs/go-path"
-	coreiface "github.com/ipfs/interface-go-ipfs-core"
-	caopts "github.com/ipfs/interface-go-ipfs-core/options"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
+	caopts "github.com/ETHFSx/interface-go-ipfs-core/options"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 )

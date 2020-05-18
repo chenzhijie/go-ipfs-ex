@@ -13,8 +13,8 @@ import (
 	config "github.com/ipfs/go-ipfs-config"
 	files "github.com/ipfs/go-ipfs-files"
 	libp2p "github.com/ETHFSx/go-ipfs/core/node/libp2p"
-	icore "github.com/ipfs/interface-go-ipfs-core"
-	icorepath "github.com/ipfs/interface-go-ipfs-core/path"
+	icore "github.com/ETHFSx/interface-go-ipfs-core"
+	icorepath "github.com/ETHFSx/interface-go-ipfs-core/path"
 	peerstore "github.com/libp2p/go-libp2p-peerstore"
 	ma "github.com/multiformats/go-multiaddr"
 

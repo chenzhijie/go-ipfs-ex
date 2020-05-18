@@ -11,7 +11,7 @@ import (
 	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 var PubsubCmd = &cmds.Command{

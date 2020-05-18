@@ -15,9 +15,9 @@ import (
 	offline "github.com/ipfs/go-ipfs-exchange-offline"
 	dag "github.com/ipfs/go-merkledag"
 	verifcid "github.com/ipfs/go-verifcid"
-	coreiface "github.com/ipfs/interface-go-ipfs-core"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
-	"github.com/ipfs/interface-go-ipfs-core/path"
+	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/path"
 
 	core "github.com/ETHFSx/go-ipfs/core"
 	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"

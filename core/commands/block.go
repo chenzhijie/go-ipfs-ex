@@ -12,8 +12,8 @@ import (
 	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 	mh "github.com/multiformats/go-multihash"
 )
 

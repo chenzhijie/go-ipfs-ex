@@ -15,8 +15,10 @@ github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 h1:cTp8I5+VIo
 github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96/go.mod h1:bOvUY6CB00SOBii9/FifXqc0awNKxLFCL/+pkDPuyl8=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
-github.com/ETHFSx/go-bitswap v0.2.15-rc.0 h1:604S1eVzoKjA2TR9O7oV9aske+G31onBuVEu/riEeEA=
-github.com/ETHFSx/go-bitswap v0.2.15-rc.0/go.mod h1:DLASpowZ54hPvD85TIqPMtmnMxNZd8IIfY0fuZdSBjI=
+github.com/ETHFSx/go-bitswap v0.2.15-rc.1 h1:St/yLvjoqFFrMs6G/1PWmttCmy6cGK/hkGTEyZiF18o=
+github.com/ETHFSx/go-bitswap v0.2.15-rc.1/go.mod h1:DLASpowZ54hPvD85TIqPMtmnMxNZd8IIfY0fuZdSBjI=
+github.com/ETHFSx/interface-go-ipfs-core v0.3.1-rc.0 h1:KNTjxLSohzpeG8PkACnSstW3HYHimIg7OQDKiXP3RRM=
+github.com/ETHFSx/interface-go-ipfs-core v0.3.1-rc.0/go.mod h1:yRwHtqc+K/vlM5fkGEOxr9i1dIWKxUFa7pXhEyZQmcU=
 github.com/Kubuxu/go-os-helper v0.0.1 h1:EJiD2VUQyh5A9hWJLmc6iWg6yIcJ7jpBcwC8GMGXfDk=
 github.com/Kubuxu/go-os-helper v0.0.1/go.mod h1:N8B+I7vPCT80IcP58r50u4+gEEcsZETFUpAzWW2ep1Y=
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
@@ -409,8 +411,6 @@ github.com/ipfs/go-unixfs v0.2.4/go.mod h1:SUdisfUjNoSDzzhGVxvCL9QO/nKdwXdr+gbMU
 github.com/ipfs/go-verifcid v0.0.1 h1:m2HI7zIuR5TFyQ1b79Da5N9dnnCP1vcu2QqawmWlK2E=
 github.com/ipfs/go-verifcid v0.0.1/go.mod h1:5Hrva5KBeIog4A+UpqlaIU+DEstipcJYQQZc0g37pY0=
 github.com/ipfs/interface-go-ipfs-core v0.2.7/go.mod h1:Tihp8zxGpUeE3Tokr94L6zWZZdkRQvG5TL6i9MuNE+s=
-github.com/ipfs/interface-go-ipfs-core v0.3.0 h1:oZdLLfh256gPGcYPURjivj/lv296GIcr8mUqZUnXOEI=
-github.com/ipfs/interface-go-ipfs-core v0.3.0/go.mod h1:Tihp8zxGpUeE3Tokr94L6zWZZdkRQvG5TL6i9MuNE+s=
 github.com/ipld/go-car v0.1.0 h1:AaIEA5ITRnFA68uMyuIPYGM2XXllxsu8sNjFJP797us=
 github.com/ipld/go-car v0.1.0/go.mod h1:RCWzaUh2i4mOEkB3W45Vc+9jnS/M6Qay5ooytiBHl3g=
 github.com/ipld/go-ipld-prime v0.0.2-0.20191108012745-28a82f04c785 h1:fASnkvtR+SmB2y453RxmDD3Uvd4LonVUgFGk9JoDaZs=

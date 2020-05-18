@@ -14,15 +14,15 @@ import (
 
 	dag "github.com/ipfs/go-merkledag"
 	ft "github.com/ipfs/go-unixfs"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 
 	fuse "bazil.org/fuse"
 	fs "bazil.org/fuse/fs"
 	cid "github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log"
 	mfs "github.com/ipfs/go-mfs"
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 func init() {

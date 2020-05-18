@@ -11,7 +11,7 @@ import (
 
 	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 	"github.com/ETHFSx/go-ipfs/core/coredag"
-	iface "github.com/ipfs/interface-go-ipfs-core"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
 
 	cid "github.com/ipfs/go-cid"
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
@@ -20,8 +20,8 @@ import (
 	ipld "github.com/ipfs/go-ipld-format"
 	mdag "github.com/ipfs/go-merkledag"
 	ipfspath "github.com/ipfs/go-path"
-	"github.com/ipfs/interface-go-ipfs-core/options"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 	mh "github.com/multiformats/go-multihash"
 
 	gocar "github.com/ipld/go-car"

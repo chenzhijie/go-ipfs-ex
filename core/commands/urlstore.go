@@ -10,7 +10,7 @@ import (
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	files "github.com/ipfs/go-ipfs-files"
-	"github.com/ipfs/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 var urlStoreCmd = &cmds.Command{

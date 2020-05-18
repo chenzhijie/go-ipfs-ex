@@ -10,10 +10,10 @@ import (
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	pin "github.com/ipfs/go-ipfs-pinner"
-	coreiface "github.com/ipfs/interface-go-ipfs-core"
-	caopts "github.com/ipfs/interface-go-ipfs-core/options"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
-
+	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
+	caopts "github.com/ETHFSx/interface-go-ipfs-core/options"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	"github.com/libp2p/go-libp2p-core/peer"
 	util "github.com/ETHFSx/go-ipfs/blocks/blockstoreutil"
 )
 
@@ -22,6 +22,10 @@ type BlockAPI CoreAPI
 type BlockStat struct {
 	path path.Resolved
 	size int
+}
+
+func (api *BlockAPI) Push(ctx context.Context, num uint32, peer peer.ID, c cid.Cid) error {
+	return api.blocks.Push(ctx, num, peer, c)
 }
 
 func (api *BlockAPI) Put(ctx context.Context, src io.Reader, opts ...caopts.BlockPutOption) (coreiface.BlockStat, error) {

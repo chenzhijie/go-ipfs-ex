@@ -11,7 +11,7 @@ import (
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	merkledag "github.com/ipfs/go-merkledag"
 	unixfs "github.com/ipfs/go-unixfs"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 )
 
 type LsLink struct {

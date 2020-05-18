@@ -14,9 +14,9 @@ import (
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	ipfspath "github.com/ipfs/go-path"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
-	nsopts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 )
 
 const (
