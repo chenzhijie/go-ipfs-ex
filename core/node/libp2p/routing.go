@@ -5,7 +5,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ipfs/go-ipfs/core/node/helpers"
+	"github.com/ETHFSx/go-ipfs/core/node/helpers"
 
 	host "github.com/libp2p/go-libp2p-core/host"
 	routing "github.com/libp2p/go-libp2p-core/routing"

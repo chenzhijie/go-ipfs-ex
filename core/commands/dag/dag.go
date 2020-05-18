@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ipfs/go-ipfs/core/commands/cmdenv"
-	"github.com/ipfs/go-ipfs/core/coredag"
+	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	"github.com/ETHFSx/go-ipfs/core/coredag"
 	iface "github.com/ipfs/interface-go-ipfs-core"
 
 	cid "github.com/ipfs/go-cid"

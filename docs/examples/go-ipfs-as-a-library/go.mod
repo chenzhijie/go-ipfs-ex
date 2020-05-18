@@ -1,4 +1,4 @@
-module github.com/ipfs/go-ipfs/examples/go-ipfs-as-a-library
+module github.com/ETHFSx/go-ipfs/examples/go-ipfs-as-a-library
 
 go 1.14
 

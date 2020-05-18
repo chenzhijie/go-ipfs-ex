@@ -11,7 +11,7 @@ import (
 
 iface "github.com/ipfs/interface-go-ipfs-core"
 
-"github.com/ipfs/go-ipfs/core/commands/cmdenv"
+"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 cmds "github.com/ipfs/go-ipfs-cmds"
 "github.com/ipfs/interface-go-ipfs-core/path"

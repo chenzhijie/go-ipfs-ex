@@ -8,8 +8,8 @@ import (
 
 	files "github.com/ipfs/go-ipfs-files"
 
-	util "github.com/ipfs/go-ipfs/blocks/blockstoreutil"
-	cmdenv "github.com/ipfs/go-ipfs/core/commands/cmdenv"
+	util "github.com/ETHFSx/go-ipfs/blocks/blockstoreutil"
+	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	options "github.com/ipfs/interface-go-ipfs-core/options"

@@ -7,7 +7,7 @@
 # ...and where available, a copy of the `ipfs` binary on the PATH.
 #
 # Please run this script and attach the profile archive it creates
-# when reporting bugs at https://github.com/ipfs/go-ipfs/issues
+# when reporting bugs at https://github.com/ETHFSx/go-ipfs/issues
 
 set -euo pipefail
 IFS=$'\n\t'

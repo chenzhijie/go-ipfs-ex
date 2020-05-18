@@ -8,7 +8,7 @@ import (
 	"github.com/ipfs/go-merkledag/dagutils"
 	path "github.com/ipfs/interface-go-ipfs-core/path"
 
-	cmdenv "github.com/ipfs/go-ipfs/core/commands/cmdenv"
+	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 )
 
 const (

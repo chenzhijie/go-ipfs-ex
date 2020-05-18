@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	cmdenv "github.com/ipfs/go-ipfs/core/commands/cmdenv"
-	ncmd "github.com/ipfs/go-ipfs/core/commands/name"
-	ns "github.com/ipfs/go-ipfs/namesys"
+	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	ncmd "github.com/ETHFSx/go-ipfs/core/commands/name"
+	ns "github.com/ETHFSx/go-ipfs/namesys"
 
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"

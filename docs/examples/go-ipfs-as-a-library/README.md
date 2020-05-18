@@ -30,7 +30,7 @@ Download go-ipfs and jump into the example folder:
 
 ```
 > go get -u github.com/ipfs/go-ipfs
-cd $GOPATH/src/github.com/ipfs/go-ipfs/docs/examples/go-ipfs-as-a-library
+cd $GOPATH/src/github.com/ETHFSx/go-ipfs/docs/examples/go-ipfs-as-a-library
 ```
 
 ## Running the example as-is
