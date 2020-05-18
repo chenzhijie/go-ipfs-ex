@@ -9,7 +9,7 @@ import (
 
 	"github.com/ETHFSx/go-ipfs/core/coreunix"
 
-	blockservice "github.com/ipfs/go-blockservice"
+	blockservice "github.com/ETHFSx/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	cidutil "github.com/ipfs/go-cidutil"
 	filestore "github.com/ipfs/go-filestore"

@@ -14,7 +14,7 @@ import (
 	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 	"github.com/dustin/go-humanize"
-	bservice "github.com/ipfs/go-blockservice"
+	bservice "github.com/ETHFSx/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"

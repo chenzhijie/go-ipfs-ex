@@ -16,7 +16,7 @@ import (
 	"github.com/ipfs/go-filestore"
 	"github.com/ipfs/go-ipfs-pinner"
 
-	bserv "github.com/ipfs/go-blockservice"
+	bserv "github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-graphsync"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
 	exchange "github.com/ipfs/go-ipfs-exchange-interface"

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	blockservice "github.com/ipfs/go-blockservice"
+	blockservice "github.com/ETHFSx/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	cidutil "github.com/ipfs/go-cidutil"
 	blockstore "github.com/ipfs/go-ipfs-blockstore"

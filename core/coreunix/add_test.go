@@ -16,7 +16,7 @@ import (
 	"github.com/ETHFSx/go-ipfs/repo"
 
 	blocks "github.com/ipfs/go-block-format"
-	"github.com/ipfs/go-blockservice"
+	"github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	syncds "github.com/ipfs/go-datastore/sync"

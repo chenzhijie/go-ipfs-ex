@@ -5,7 +5,7 @@ go 1.13
 require (
 	github.com/Kubuxu/gocovmerge v0.0.0-20161216165753-7ecaa51963cd
 	github.com/golangci/golangci-lint v1.18.0
-	github.com/ipfs/go-blockservice v0.1.2
+	github.com/ETHFSx/go-blockservice v0.1.2
 	github.com/ipfs/go-cid v0.0.5
 	github.com/ipfs/go-cidutil v0.0.2
 	github.com/ipfs/go-datastore v0.4.4

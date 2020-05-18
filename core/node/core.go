@@ -6,7 +6,7 @@ import (
 
 	"github.com/ETHFSx/go-bitswap"
 	"github.com/ETHFSx/go-bitswap/network"
-	"github.com/ipfs/go-blockservice"
+	"github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-filestore"
