@@ -11,12 +11,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/gc"
-	"github.com/ipfs/go-ipfs/repo"
+	"github.com/ETHFSx/go-ipfs/core"
+	"github.com/ETHFSx/go-ipfs/gc"
+	"github.com/ETHFSx/go-ipfs/repo"
 
 	blocks "github.com/ipfs/go-block-format"
-	"github.com/ipfs/go-blockservice"
+	"github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	syncds "github.com/ipfs/go-datastore/sync"
@@ -25,7 +25,7 @@ import (
 	files "github.com/ipfs/go-ipfs-files"
 	pi "github.com/ipfs/go-ipfs-posinfo"
 	dag "github.com/ipfs/go-merkledag"
-	coreiface "github.com/ipfs/interface-go-ipfs-core"
+	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
 )
 
 const testPeerID = "QmTFauExutTsy4XP6JbMFcw2Wa9645HJt2bTqL6qYDCKfe"

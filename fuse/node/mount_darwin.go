@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"strings"
 
-	core "github.com/ipfs/go-ipfs/core"
+	core "github.com/ETHFSx/go-ipfs/core"
 
 	"github.com/blang/semver"
 	unix "golang.org/x/sys/unix"
@@ -38,7 +38,7 @@ It is recommended you install it from the OSXFUSE website:
 
 For more help, see:
 
-	https://github.com/ipfs/go-ipfs/issues/177
+	https://github.com/ETHFSx/go-ipfs/issues/177
 `
 
 // errStrNoFuseHeaders is included in the output of `go get <fuseVersionPkg>` if there
@@ -55,7 +55,7 @@ It is recommended you install it from the OSXFUSE website:
 
 For more help, see:
 
-	https://github.com/ipfs/go-ipfs/issues/177
+	https://github.com/ETHFSx/go-ipfs/issues/177
 `
 
 type errNeedFuseVersion struct {
@@ -81,8 +81,8 @@ version you have by running:
 
 	ipfs config --bool %s true
 
-[1]: https://github.com/ipfs/go-ipfs/issues/177
-[2]: https://github.com/ipfs/go-ipfs/pull/533
+[1]: https://github.com/ETHFSx/go-ipfs/issues/177
+[2]: https://github.com/ETHFSx/go-ipfs/pull/533
 [3]: %s
 `, fuseVersionPkg, dontCheckOSXFUSEConfigKey, me.cause)
 }
@@ -112,8 +112,8 @@ trying to run these checks with:
 
 	ipfs config --bool %s true
 
-[1]: https://github.com/ipfs/go-ipfs/issues/177
-[2]: https://github.com/ipfs/go-ipfs/pull/533
+[1]: https://github.com/ETHFSx/go-ipfs/issues/177
+[2]: https://github.com/ETHFSx/go-ipfs/pull/533
 [3]: %s
 `
 
@@ -122,7 +122,7 @@ You may be able to get this error to go away by setting it again:
 
 	ipfs config --bool %s true
 
-Either way, please tell us at: http://github.com/ipfs/go-ipfs/issues
+Either way, please tell us at: http://github.com/ETHFSx/go-ipfs/issues
 `
 
 func darwinFuseCheckVersion(node *core.IpfsNode) error {

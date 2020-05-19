@@ -9,7 +9,7 @@ import (
 	"github.com/libp2p/go-libp2p/p2p/discovery"
 	"go.uber.org/fx"
 
-	"github.com/ipfs/go-ipfs/core/node/helpers"
+	"github.com/ETHFSx/go-ipfs/core/node/helpers"
 )
 
 const discoveryConnTimeout = time.Second * 30

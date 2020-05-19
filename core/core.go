@@ -16,7 +16,7 @@ import (
 	"github.com/ipfs/go-filestore"
 	"github.com/ipfs/go-ipfs-pinner"
 
-	bserv "github.com/ipfs/go-blockservice"
+	bserv "github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-graphsync"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
 	exchange "github.com/ipfs/go-ipfs-exchange-interface"
@@ -40,14 +40,14 @@ import (
 	"github.com/libp2p/go-libp2p/p2p/discovery"
 	p2pbhost "github.com/libp2p/go-libp2p/p2p/host/basic"
 
-	"github.com/ipfs/go-ipfs/core/bootstrap"
-	"github.com/ipfs/go-ipfs/core/node"
-	"github.com/ipfs/go-ipfs/core/node/libp2p"
-	"github.com/ipfs/go-ipfs/fuse/mount"
-	"github.com/ipfs/go-ipfs/namesys"
-	ipnsrp "github.com/ipfs/go-ipfs/namesys/republisher"
-	"github.com/ipfs/go-ipfs/p2p"
-	"github.com/ipfs/go-ipfs/repo"
+	"github.com/ETHFSx/go-ipfs/core/bootstrap"
+	"github.com/ETHFSx/go-ipfs/core/node"
+	"github.com/ETHFSx/go-ipfs/core/node/libp2p"
+	"github.com/ETHFSx/go-ipfs/fuse/mount"
+	"github.com/ETHFSx/go-ipfs/namesys"
+	ipnsrp "github.com/ETHFSx/go-ipfs/namesys/republisher"
+	"github.com/ETHFSx/go-ipfs/p2p"
+	"github.com/ETHFSx/go-ipfs/repo"
 )
 
 var log = logging.Logger("core")

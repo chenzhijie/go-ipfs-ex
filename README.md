@@ -17,7 +17,7 @@ IPFS is a global, versioned, peer-to-peer filesystem. It combines good ideas fro
 For more info see: https://docs.ipfs.io/introduction/overview/
 
 Before opening an issue, consider using one of the following locations to ensure you are opening your thread in the right place:
-  - go-ipfs _implementation_ bugs in [this repo](https://github.com/ipfs/go-ipfs/issues).
+  - go-ipfs _implementation_ bugs in [this repo](https://github.com/ETHFSx/go-ipfs/issues).
   - Documentation issues in [ipfs/docs issues](https://github.com/ipfs/docs/issues).
   - IPFS _design_ in [ipfs/specs issues](https://github.com/ipfs/specs/issues).
   - Exploration of new ideas in [ipfs/notes issues](https://github.com/ipfs/notes/issues).
@@ -221,7 +221,7 @@ Note: OpenSSL requires CGO support and, by default, CGO is disabled when cross-c
 dependencies as well.
 - _WARNING_: Older versions of OSX FUSE (for Mac OS X) can cause kernel panics when mounting!-
   We strongly recommend you use the [latest version of OSX FUSE](http://osxfuse.github.io/).
-  (See https://github.com/ipfs/go-ipfs/issues/177)
+  (See https://github.com/ETHFSx/go-ipfs/issues/177)
 - For more details on setting up FUSE (so that you can mount the filesystem), see the docs folder.
 - Shell command completion is available in `misc/completion/ipfs-completion.bash`. Read [docs/command-completion.md](docs/command-completion.md) to learn how to install it.
 - See the [init examples](https://github.com/ipfs/website/tree/master/static/docs/examples/init) for how to connect IPFS to systemd or whatever init system your distro uses.
@@ -393,7 +393,7 @@ If you have previously installed IPFS before and you are running into problems g
 
 Please direct general questions and help requests to our [forum](https://discuss.ipfs.io) or our IRC channel (freenode #ipfs).
 
-If you believe you've found a bug, check the [issues list](https://github.com/ipfs/go-ipfs/issues) and, if you don't see your problem there, either come talk to us on IRC (freenode #ipfs) or file an issue of your own!
+If you believe you've found a bug, check the [issues list](https://github.com/ETHFSx/go-ipfs/issues) and, if you don't see your problem there, either come talk to us on IRC (freenode #ipfs) or file an issue of your own!
 
 ## Packages
 
@@ -422,7 +422,7 @@ Listing of the main packages used in the IPFS ecosystem. There are also three sp
 | [`go-ipfs-exchange-interface`](//github.com/ipfs/go-ipfs-exchange-interface) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-ipfs-exchange-interface/master)](https://travis-ci.com/ipfs/go-ipfs-exchange-interface) | [![codecov](https://codecov.io/gh/ipfs/go-ipfs-exchange-interface/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-ipfs-exchange-interface) | exchange service interface |
 | [`go-ipfs-exchange-offline`](//github.com/ipfs/go-ipfs-exchange-offline) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-ipfs-exchange-offline/master)](https://travis-ci.com/ipfs/go-ipfs-exchange-offline) | [![codecov](https://codecov.io/gh/ipfs/go-ipfs-exchange-offline/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-ipfs-exchange-offline) | (dummy) offline implementation of the exchange service |
 | [`go-bitswap`](//github.com/ipfs/go-bitswap) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-bitswap/master)](https://travis-ci.com/ipfs/go-bitswap) | [![codecov](https://codecov.io/gh/ipfs/go-bitswap/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-bitswap) | bitswap protocol implementation |
-| [`go-blockservice`](//github.com/ipfs/go-blockservice) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-blockservice/master)](https://travis-ci.com/ipfs/go-blockservice) | [![codecov](https://codecov.io/gh/ipfs/go-blockservice/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-blockservice) | service that plugs a blockstore and an exchange together |
+| [`go-blockservice`](//github.com/ETHFSx/go-blockservice) | [![Travis CI](https://flat.badgen.net/travis/ETHFSx/go-blockservice/master)](https://travis-ci.com/ETHFSx/go-blockservice) | [![codecov](https://codecov.io/gh/ETHFSx/go-blockservice/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ETHFSx/go-blockservice) | service that plugs a blockstore and an exchange together |
 | **Datastores** |
 | [`go-datastore`](//github.com/ipfs/go-datastore) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-datastore/master)](https://travis-ci.com/ipfs/go-datastore) | [![codecov](https://codecov.io/gh/ipfs/go-datastore/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-datastore) | datastore interfaces, adapters, and basic implementations |
 | [`go-ipfs-ds-help`](//github.com/ipfs/go-ipfs-ds-help) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-ipfs-ds-help/master)](https://travis-ci.com/ipfs/go-ipfs-ds-help) | [![codecov](https://codecov.io/gh/ipfs/go-ipfs-ds-help/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-ipfs-ds-help) | datastore utility functions |
@@ -448,7 +448,7 @@ Listing of the main packages used in the IPFS ecosystem. There are also three sp
 | [`go-ipfs-files`](//github.com/ipfs/go-ipfs-files) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-ipfs-files/master)](https://travis-ci.com/ipfs/go-ipfs-files) | [![codecov](https://codecov.io/gh/ipfs/go-ipfs-files/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-ipfs-files) | CLI & HTTP commands library |
 | [`go-ipfs-api`](//github.com/ipfs/go-ipfs-api) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-ipfs-api/master)](https://travis-ci.com/ipfs/go-ipfs-api) | [![codecov](https://codecov.io/gh/ipfs/go-ipfs-api/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-ipfs-api) | an old, stable shell for the IPFS HTTP API |
 | [`go-ipfs-http-client`](//github.com/ipfs/go-ipfs-http-client) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-ipfs-http-client/master)](https://travis-ci.com/ipfs/go-ipfs-http-client) | [![codecov](https://codecov.io/gh/ipfs/go-ipfs-http-client/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-ipfs-http-client) | a new, unstable shell for the IPFS HTTP API |
-| [`interface-go-ipfs-core`](//github.com/ipfs/interface-go-ipfs-core) | [![Travis CI](https://flat.badgen.net/travis/ipfs/interface-go-ipfs-core/master)](https://travis-ci.com/ipfs/interface-go-ipfs-core) | [![codecov](https://codecov.io/gh/ipfs/interface-go-ipfs-core/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/interface-go-ipfs-core) | core go-ipfs API interface definitions |
+| [`interface-go-ipfs-core`](//github.com/ETHFSx/interface-go-ipfs-core) | [![Travis CI](https://flat.badgen.net/travis/ipfs/interface-go-ipfs-core/master)](https://travis-ci.com/ipfs/interface-go-ipfs-core) | [![codecov](https://codecov.io/gh/ipfs/interface-go-ipfs-core/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/interface-go-ipfs-core) | core go-ipfs API interface definitions |
 | **Metrics & Logging** |
 | [`go-metrics-interface`](//github.com/ipfs/go-metrics-interface) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-metrics-interface/master)](https://travis-ci.com/ipfs/go-metrics-interface) | [![codecov](https://codecov.io/gh/ipfs/go-metrics-interface/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-metrics-interface) | metrics collection interfaces |
 | [`go-metrics-prometheus`](//github.com/ipfs/go-metrics-prometheus) | [![Travis CI](https://flat.badgen.net/travis/ipfs/go-metrics-prometheus/master)](https://travis-ci.com/ipfs/go-metrics-prometheus) | [![codecov](https://codecov.io/gh/ipfs/go-metrics-prometheus/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/ipfs/go-metrics-prometheus) | prometheus-backed metrics collector |
@@ -467,14 +467,14 @@ For brevity, we've omitted most go-libp2p, go-ipld, and go-multiformats packages
 
 Some places to get you started on the codebase:
 
-- Main file: [./cmd/ipfs/main.go](https://github.com/ipfs/go-ipfs/blob/master/cmd/ipfs/main.go)
-- CLI Commands: [./core/commands/](https://github.com/ipfs/go-ipfs/tree/master/core/commands)
+- Main file: [./cmd/ipfs/main.go](https://github.com/ETHFSx/go-ipfs/blob/master/cmd/ipfs/main.go)
+- CLI Commands: [./core/commands/](https://github.com/ETHFSx/go-ipfs/tree/master/core/commands)
 - Bitswap (the data trading engine): [go-bitswap](https://github.com/ipfs/go-bitswap)
 - libp2p
   - libp2p: https://github.com/libp2p/go-libp2p
   - DHT: https://github.com/libp2p/go-libp2p-kad-dht
   - PubSub: https://github.com/libp2p/go-libp2p-pubsub
-- [IPFS : The `Add` command demystified](https://github.com/ipfs/go-ipfs/tree/master/docs/add-code-flow.md)
+- [IPFS : The `Add` command demystified](https://github.com/ETHFSx/go-ipfs/tree/master/docs/add-code-flow.md)
 
 ### Map of go-ipfs Subsystems
 **WIP**: This is a high-level architecture diagram of the various sub-systems of go-ipfs. To be updated with how they interact. Anyone who has suggestions is welcome to comment [here](https://docs.google.com/drawings/d/1OVpBT2q-NtSJqlPX3buvjYhOnWfdzb85YEsM_njesME/edit) on how we can improve this!
@@ -517,5 +517,5 @@ You can contact us on the freenode #ipfs-dev channel or attend one of our
 
 The go-ipfs project is dual-licensed under Apache 2.0 and MIT terms:
 
-- Apache License, Version 2.0, ([LICENSE-APACHE](https://github.com/ipfs/go-ipfs/blob/master/LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](https://github.com/ipfs/go-ipfs/blob/master/LICENSE-MIT) or http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0, ([LICENSE-APACHE](https://github.com/ETHFSx/go-ipfs/blob/master/LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license ([LICENSE-MIT](https://github.com/ETHFSx/go-ipfs/blob/master/LICENSE-MIT) or http://opensource.org/licenses/MIT)

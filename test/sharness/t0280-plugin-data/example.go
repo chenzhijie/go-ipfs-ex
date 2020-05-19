@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ipfs/go-ipfs/plugin"
+	"github.com/ETHFSx/go-ipfs/plugin"
 )
 
 var Plugins = []plugin.Plugin{

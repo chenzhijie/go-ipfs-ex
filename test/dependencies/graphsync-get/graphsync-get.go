@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/ipfs/go-blockservice"
+	"github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"

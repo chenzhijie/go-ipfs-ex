@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"plugin"
 
-	iplugin "github.com/ipfs/go-ipfs/plugin"
+	iplugin "github.com/ETHFSx/go-ipfs/plugin"
 )
 
 func init() {

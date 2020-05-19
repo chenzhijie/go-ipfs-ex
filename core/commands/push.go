@@ -9,12 +9,12 @@ package commands
 import (
 "context"
 
-iface "github.com/ipfs/interface-go-ipfs-core"
+iface "github.com/ETHFSx/interface-go-ipfs-core"
 
-"github.com/ipfs/go-ipfs/core/commands/cmdenv"
+"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 cmds "github.com/ipfs/go-ipfs-cmds"
-"github.com/ipfs/interface-go-ipfs-core/path"
+"github.com/ETHFSx/interface-go-ipfs-core/path"
 )
 
 const (

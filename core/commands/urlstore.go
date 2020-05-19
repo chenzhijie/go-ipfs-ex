@@ -6,11 +6,11 @@ import (
 	"net/url"
 
 	filestore "github.com/ipfs/go-filestore"
-	cmdenv "github.com/ipfs/go-ipfs/core/commands/cmdenv"
+	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	files "github.com/ipfs/go-ipfs-files"
-	"github.com/ipfs/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
 )
 
 var urlStoreCmd = &cmds.Command{

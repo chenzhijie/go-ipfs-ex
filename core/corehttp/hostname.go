@@ -9,17 +9,17 @@ import (
 	"strings"
 
 	cid "github.com/ipfs/go-cid"
-	core "github.com/ipfs/go-ipfs/core"
-	coreapi "github.com/ipfs/go-ipfs/core/coreapi"
-	namesys "github.com/ipfs/go-ipfs/namesys"
+	core "github.com/ETHFSx/go-ipfs/core"
+	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
+	namesys "github.com/ETHFSx/go-ipfs/namesys"
 	isd "github.com/jbenet/go-is-domain"
 	"github.com/libp2p/go-libp2p-core/peer"
 	mbase "github.com/multiformats/go-multibase"
 
 	config "github.com/ipfs/go-ipfs-config"
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	options "github.com/ipfs/interface-go-ipfs-core/options"
-	nsopts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
 )
 
 var defaultPaths = []string{"/ipfs/", "/ipns/", "/api/", "/p2p/", "/version"}
@@ -326,7 +326,7 @@ func toSubdomainURL(hostname, path string, r *http.Request) (redirURL string, ok
 		// PeerIDs represented as CIDv1 are expected to have libp2p-key
 		// multicodec (https://github.com/libp2p/specs/pull/209).
 		// We ease the transition by fixing multicodec on the fly:
-		// https://github.com/ipfs/go-ipfs/issues/5287#issuecomment-492163929
+		// https://github.com/ETHFSx/go-ipfs/issues/5287#issuecomment-492163929
 		if isPeerIDNamespace(ns) && multicodec != cid.Libp2pKey {
 			multicodec = cid.Libp2pKey
 		}

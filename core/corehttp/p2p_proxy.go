@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strings"
 
-	core "github.com/ipfs/go-ipfs/core"
+	core "github.com/ETHFSx/go-ipfs/core"
 
 	protocol "github.com/libp2p/go-libp2p-core/protocol"
 	p2phttp "github.com/libp2p/go-libp2p-http"

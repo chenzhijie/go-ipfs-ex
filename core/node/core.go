@@ -4,26 +4,27 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ipfs/go-bitswap"
-	"github.com/ipfs/go-bitswap/network"
-	"github.com/ipfs/go-blockservice"
+	"github.com/ETHFSx/go-bitswap"
+	"github.com/ETHFSx/go-bitswap/network"
+	"github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-filestore"
 	"github.com/ipfs/go-ipfs-blockstore"
 	"github.com/ipfs/go-ipfs-exchange-interface"
-	"github.com/ipfs/go-ipfs-exchange-offline"
+	"github.com/ETHFSx/go-ipfs-exchange-offline"
 	"github.com/ipfs/go-ipfs-pinner"
 	"github.com/ipfs/go-ipld-format"
-	"github.com/ipfs/go-merkledag"
+	"github.com/ETHFSx/go-merkledag"
+	_merkledag "github.com/ipfs/go-merkledag"
 	"github.com/ipfs/go-mfs"
 	"github.com/ipfs/go-unixfs"
 	"github.com/libp2p/go-libp2p-core/host"
 	"github.com/libp2p/go-libp2p-core/routing"
 	"go.uber.org/fx"
 
-	"github.com/ipfs/go-ipfs/core/node/helpers"
-	"github.com/ipfs/go-ipfs/repo"
+	"github.com/ETHFSx/go-ipfs/core/node/helpers"
+	"github.com/ETHFSx/go-ipfs/repo"
 )
 
 // BlockService creates new blockservice which provides an interface to fetch content-addressable blocks
@@ -122,7 +123,7 @@ func Files(mctx helpers.MetricsCtx, lc fx.Lifecycle, repo repo.Repo, dag format.
 		return rootDS.Sync(dsk)
 	}
 
-	var nd *merkledag.ProtoNode
+	var nd *_merkledag.ProtoNode
 	val, err := repo.Datastore().Get(dsk)
 	ctx := helpers.LifecycleCtx(mctx, lc)
 
@@ -144,7 +145,7 @@ func Files(mctx helpers.MetricsCtx, lc fx.Lifecycle, repo repo.Repo, dag format.
 			return nil, fmt.Errorf("error loading filesroot from DAG: %s", err)
 		}
 
-		pbnd, ok := rnd.(*merkledag.ProtoNode)
+		pbnd, ok := rnd.(*_merkledag.ProtoNode)
 		if !ok {
 			return nil, merkledag.ErrNotProtobuf
 		}
