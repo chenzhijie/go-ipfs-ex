@@ -9,7 +9,7 @@ import (
 	cidutil "github.com/ipfs/go-cidutil"
 	blockstore "github.com/ipfs/go-ipfs-blockstore"
 	offline "github.com/ipfs/go-ipfs-exchange-offline"
-	dag "github.com/ipfs/go-merkledag"
+	dag "github.com/ETHFSx/go-merkledag"
 	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
 	caopts "github.com/ETHFSx/interface-go-ipfs-core/options"
 	path "github.com/ETHFSx/interface-go-ipfs-core/path"

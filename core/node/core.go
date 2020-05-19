@@ -12,10 +12,11 @@ import (
 	"github.com/ipfs/go-filestore"
 	"github.com/ipfs/go-ipfs-blockstore"
 	"github.com/ipfs/go-ipfs-exchange-interface"
-	"github.com/ipfs/go-ipfs-exchange-offline"
+	"github.com/ETHFSx/go-ipfs-exchange-offline"
 	"github.com/ipfs/go-ipfs-pinner"
 	"github.com/ipfs/go-ipld-format"
-	"github.com/ipfs/go-merkledag"
+	"github.com/ETHFSx/go-merkledag"
+	_merkledag "github.com/ipfs/go-merkledag"
 	"github.com/ipfs/go-mfs"
 	"github.com/ipfs/go-unixfs"
 	"github.com/libp2p/go-libp2p-core/host"
@@ -122,7 +123,7 @@ func Files(mctx helpers.MetricsCtx, lc fx.Lifecycle, repo repo.Repo, dag format.
 		return rootDS.Sync(dsk)
 	}
 
-	var nd *merkledag.ProtoNode
+	var nd *_merkledag.ProtoNode
 	val, err := repo.Datastore().Get(dsk)
 	ctx := helpers.LifecycleCtx(mctx, lc)
 
@@ -144,7 +145,7 @@ func Files(mctx helpers.MetricsCtx, lc fx.Lifecycle, repo repo.Repo, dag format.
 			return nil, fmt.Errorf("error loading filesroot from DAG: %s", err)
 		}
 
-		pbnd, ok := rnd.(*merkledag.ProtoNode)
+		pbnd, ok := rnd.(*_merkledag.ProtoNode)
 		if !ok {
 			return nil, merkledag.ErrNotProtobuf
 		}

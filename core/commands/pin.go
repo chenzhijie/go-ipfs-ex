@@ -13,7 +13,7 @@ import (
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	offline "github.com/ipfs/go-ipfs-exchange-offline"
-	dag "github.com/ipfs/go-merkledag"
+	dag "github.com/ETHFSx/go-merkledag"
 	verifcid "github.com/ipfs/go-verifcid"
 	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
 	options "github.com/ETHFSx/interface-go-ipfs-core/options"
