@@ -28,7 +28,7 @@
     ["ipfs/go-ipfs-exchange-interface", "go-ipfs-exchange-interface", "exchange service interface"],
     ["ipfs/go-ipfs-exchange-offline", "go-ipfs-exchange-offline", "(dummy) offline implementation of the exchange service"],
     ["ipfs/go-bitswap", "go-bitswap", "bitswap protocol implementation"],
-    ["ipfs/go-blockservice", "go-blockservice", "service that plugs a blockstore and an exchange together"],
+    ["ETHFSx/go-blockservice", "go-blockservice", "service that plugs a blockstore and an exchange together"],
 
     "Datastores",
     ["ipfs/go-datastore", "go-datastore", "datastore interfaces, adapters, and basic implementations"],

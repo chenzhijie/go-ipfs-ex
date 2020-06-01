@@ -12,7 +12,7 @@ import (
 	ipns "github.com/ipfs/go-ipns"
 	path "github.com/ipfs/go-path"
 	unixfs "github.com/ipfs/go-unixfs"
-	opts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
+	opts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	pstoremem "github.com/libp2p/go-libp2p-peerstore/pstoremem"

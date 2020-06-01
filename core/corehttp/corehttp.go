@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"time"
 
-	core "github.com/ipfs/go-ipfs/core"
+	core "github.com/ETHFSx/go-ipfs/core"
 	logging "github.com/ipfs/go-log"
 	"github.com/jbenet/goprocess"
 	periodicproc "github.com/jbenet/goprocess/periodic"

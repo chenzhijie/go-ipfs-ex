@@ -11,7 +11,7 @@ import (
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
 	path "github.com/ipfs/go-path"
-	opts "github.com/ipfs/interface-go-ipfs-core/options/namesys"
+	opts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
 	isd "github.com/jbenet/go-is-domain"
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"

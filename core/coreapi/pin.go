@@ -4,14 +4,14 @@ import (
 	"context"
 	"fmt"
 
-	bserv "github.com/ipfs/go-blockservice"
+	bserv "github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-cid"
 	offline "github.com/ipfs/go-ipfs-exchange-offline"
 	pin "github.com/ipfs/go-ipfs-pinner"
-	"github.com/ipfs/go-merkledag"
-	coreiface "github.com/ipfs/interface-go-ipfs-core"
-	caopts "github.com/ipfs/interface-go-ipfs-core/options"
-	"github.com/ipfs/interface-go-ipfs-core/path"
+	"github.com/ETHFSx/go-merkledag"
+	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
+	caopts "github.com/ETHFSx/interface-go-ipfs-core/options"
+	"github.com/ETHFSx/interface-go-ipfs-core/path"
 )
 
 type PinAPI CoreAPI

@@ -1,21 +1,25 @@
-module github.com/ipfs/go-ipfs
+module github.com/ETHFSx/go-ipfs
 
 require (
 	bazil.org/fuse v0.0.0-20200117225306-7b5117fecadc
-	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect
+	github.com/ETHFSx/go-bitswap v0.2.15-rc.3
+	github.com/ETHFSx/go-blockservice v0.1.5-rc.1
+	github.com/ETHFSx/go-ipfs-exchange-offline v0.0.2-rc.0
+	github.com/ETHFSx/go-merkledag v0.3.3
+	github.com/ETHFSx/interface-go-ipfs-core v0.3.1-rc.1
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/bren2010/proquint v0.0.0-20160323162903-38337c27106d
+	github.com/cheekybits/is v0.0.0-20150225183255-68e9c0620927
 	github.com/coreos/go-systemd/v22 v22.0.0
 	github.com/dustin/go-humanize v1.0.0
 	github.com/elgris/jsondiff v0.0.0-20160530203242-765b5c24c302
-	github.com/fatih/color v1.9.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9
 	github.com/gabriel-vasile/mimetype v1.1.0
 	github.com/go-bindata/go-bindata/v3 v3.1.3
 	github.com/gogo/protobuf v1.3.1
 	github.com/hashicorp/go-multierror v1.1.0
 	github.com/hashicorp/golang-lru v0.5.4
-	github.com/ipfs/go-bitswap v0.2.13
+	//github.com/ipfs/go-bitswap v0.2.13
 	github.com/ipfs/go-block-format v0.0.2
 	github.com/ipfs/go-blockservice v0.1.3
 	github.com/ipfs/go-cid v0.0.5
@@ -29,6 +33,8 @@ require (
 	github.com/ipfs/go-filestore v0.0.3
 	github.com/ipfs/go-fs-lock v0.0.4
 	github.com/ipfs/go-graphsync v0.0.5
+	github.com/ipfs/go-ipfs v0.5.1
+	github.com/ipfs/go-ipfs-api v0.0.3
 	github.com/ipfs/go-ipfs-blockstore v0.1.4
 	github.com/ipfs/go-ipfs-chunker v0.0.5
 	github.com/ipfs/go-ipfs-cmds v0.2.9
@@ -54,7 +60,6 @@ require (
 	github.com/ipfs/go-path v0.0.7
 	github.com/ipfs/go-unixfs v0.2.4
 	github.com/ipfs/go-verifcid v0.0.1
-	github.com/ipfs/interface-go-ipfs-core v0.3.0
 	github.com/ipld/go-car v0.1.0
 	github.com/jbenet/go-is-domain v1.0.3
 	github.com/jbenet/go-random v0.0.0-20190219211222-123a90aedc0c
@@ -69,6 +74,7 @@ require (
 	github.com/libp2p/go-libp2p-kad-dht v0.7.11
 	github.com/libp2p/go-libp2p-kbucket v0.4.1
 	github.com/libp2p/go-libp2p-loggables v0.1.0
+	github.com/libp2p/go-libp2p-metrics v0.1.0
 	github.com/libp2p/go-libp2p-mplex v0.2.3
 	github.com/libp2p/go-libp2p-peerstore v0.2.3
 	github.com/libp2p/go-libp2p-pubsub v0.2.7
@@ -82,9 +88,7 @@ require (
 	github.com/libp2p/go-libp2p-tls v0.1.3
 	github.com/libp2p/go-libp2p-yamux v0.2.7
 	github.com/libp2p/go-maddr-filter v0.0.5
-	github.com/libp2p/go-sockaddr v0.1.0 // indirect
 	github.com/libp2p/go-socket-activation v0.0.2
-	github.com/mattn/go-runewidth v0.0.8 // indirect
 	github.com/miekg/dns v1.1.29 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mr-tron/base58 v1.1.3
@@ -104,7 +108,6 @@ require (
 	go.uber.org/fx v1.12.0
 	go.uber.org/zap v1.15.0
 	golang.org/x/crypto v0.0.0-20200423211502-4bdfaf469ed5
-	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e // indirect
 	golang.org/x/sys v0.0.0-20200420163511-1957bb5e6d1f
 	gopkg.in/cheggaaa/pb.v1 v1.0.28
 )

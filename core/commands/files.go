@@ -10,22 +10,22 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/core/commands/cmdenv"
+	"github.com/ETHFSx/go-ipfs/core"
+	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
 
 	"github.com/dustin/go-humanize"
-	bservice "github.com/ipfs/go-blockservice"
+	bservice "github.com/ETHFSx/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	offline "github.com/ipfs/go-ipfs-exchange-offline"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
-	dag "github.com/ipfs/go-merkledag"
+	dag "github.com/ETHFSx/go-merkledag"
 	"github.com/ipfs/go-mfs"
 	ft "github.com/ipfs/go-unixfs"
-	iface "github.com/ipfs/interface-go-ipfs-core"
-	path "github.com/ipfs/interface-go-ipfs-core/path"
+	iface "github.com/ETHFSx/interface-go-ipfs-core"
+	path "github.com/ETHFSx/interface-go-ipfs-core/path"
 	mh "github.com/multiformats/go-multihash"
 )
 

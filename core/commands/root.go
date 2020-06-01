@@ -3,11 +3,11 @@ package commands
 import (
 	"errors"
 
-	cmdenv "github.com/ipfs/go-ipfs/core/commands/cmdenv"
-	dag "github.com/ipfs/go-ipfs/core/commands/dag"
-	name "github.com/ipfs/go-ipfs/core/commands/name"
-	ocmd "github.com/ipfs/go-ipfs/core/commands/object"
-	unixfs "github.com/ipfs/go-ipfs/core/commands/unixfs"
+	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	dag "github.com/ETHFSx/go-ipfs/core/commands/dag"
+	name "github.com/ETHFSx/go-ipfs/core/commands/name"
+	ocmd "github.com/ETHFSx/go-ipfs/core/commands/object"
+	unixfs "github.com/ETHFSx/go-ipfs/core/commands/unixfs"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	logging "github.com/ipfs/go-log"
@@ -36,6 +36,7 @@ BASIC COMMANDS
   cat <ref>     Show IPFS object data
   get <ref>     Download IPFS objects
   ls <ref>      List links from an object
+  push <ref>    Push a file to IPFS neighbor node 
   refs <ref>    List hashes of links from an object
 
 DATA STRUCTURE COMMANDS
@@ -136,6 +137,7 @@ var rootSubcommands = map[string]*cmds.Command{
 	"mount":     MountCmd,
 	"name":      name.NameCmd,
 	"object":    ocmd.ObjectCmd,
+	"push":      PushCmd,
 	"pin":       PinCmd,
 	"ping":      PingCmd,
 	"p2p":       P2PCmd,
@@ -165,6 +167,7 @@ var VersionROCmd = &cmds.Command{}
 var rootROSubcommands = map[string]*cmds.Command{
 	"commands": CommandsDaemonROCmd,
 	"cat":      CatCmd,
+	"push":     PushCmd,
 	"block": &cmds.Command{
 		Subcommands: map[string]*cmds.Command{
 			"stat": blockStatCmd,

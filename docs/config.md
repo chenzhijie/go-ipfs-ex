@@ -772,7 +772,7 @@ available bandwidth. There is _no_ rate-limiting.
 
 Enables "automatic relay" mode for this node. This option does two _very_
 different things based on the `Swarm.EnableRelayHop`. See
-[#7228](https://github.com/ipfs/go-ipfs/issues/7228) for context.
+[#7228](https://github.com/ETHFSx/go-ipfs/issues/7228) for context.
 
 #### Mode 1: `EnableRelayHop` is `false`
 

@@ -18,18 +18,18 @@ import (
 	"errors"
 	"fmt"
 
-	bserv "github.com/ipfs/go-blockservice"
+	bserv "github.com/ETHFSx/go-blockservice"
 	"github.com/ipfs/go-ipfs-blockstore"
 	"github.com/ipfs/go-ipfs-exchange-interface"
-	offlinexch "github.com/ipfs/go-ipfs-exchange-offline"
+	offlinexch "github.com/ETHFSx/go-ipfs-exchange-offline"
 	"github.com/ipfs/go-ipfs-pinner"
 	"github.com/ipfs/go-ipfs-provider"
 	offlineroute "github.com/ipfs/go-ipfs-routing/offline"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
-	dag "github.com/ipfs/go-merkledag"
-	coreiface "github.com/ipfs/interface-go-ipfs-core"
-	"github.com/ipfs/interface-go-ipfs-core/options"
+	dag "github.com/ETHFSx/go-merkledag"
+	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
+	"github.com/ETHFSx/interface-go-ipfs-core/options"
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	p2phost "github.com/libp2p/go-libp2p-core/host"
 	peer "github.com/libp2p/go-libp2p-core/peer"
@@ -38,10 +38,10 @@ import (
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	record "github.com/libp2p/go-libp2p-record"
 
-	"github.com/ipfs/go-ipfs/core"
-	"github.com/ipfs/go-ipfs/core/node"
-	"github.com/ipfs/go-ipfs/namesys"
-	"github.com/ipfs/go-ipfs/repo"
+	"github.com/ETHFSx/go-ipfs/core"
+	"github.com/ETHFSx/go-ipfs/core/node"
+	"github.com/ETHFSx/go-ipfs/namesys"
+	"github.com/ETHFSx/go-ipfs/repo"
 )
 
 var log = logging.Logger("core/coreapi")
