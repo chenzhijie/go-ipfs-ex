@@ -7,13 +7,13 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/ETHFSx/go-ipfs/core"
-	"github.com/ETHFSx/go-ipfs/core/coreapi"
+	"github.com/IPFS-eX/go-ipfs-ex/core"
+	"github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
 
 	cid "github.com/ipfs/go-cid"
 	files "github.com/ipfs/go-ipfs-files"
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
-	"github.com/ETHFSx/interface-go-ipfs-core/path"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	"github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 // initDocPaths lists the paths for the docs we want to seed during --init

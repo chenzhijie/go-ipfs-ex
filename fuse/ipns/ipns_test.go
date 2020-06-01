@@ -15,8 +15,8 @@ import (
 
 	"bazil.org/fuse"
 
-	core "github.com/ETHFSx/go-ipfs/core"
-	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	coreapi "github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
 
 	fstest "bazil.org/fuse/fs/fstestutil"
 	racedet "github.com/ipfs/go-detect-race"

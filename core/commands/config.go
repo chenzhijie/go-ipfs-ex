@@ -10,9 +10,9 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
-	"github.com/ETHFSx/go-ipfs/repo"
-	"github.com/ETHFSx/go-ipfs/repo/fsrepo"
+	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/repo/fsrepo"
 
 	"github.com/elgris/jsondiff"
 	"github.com/ipfs/go-ipfs-cmds"

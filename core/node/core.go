@@ -4,18 +4,18 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ETHFSx/go-bitswap"
-	"github.com/ETHFSx/go-bitswap/network"
-	"github.com/ETHFSx/go-blockservice"
+	"github.com/IPFS-eX/go-bitswap"
+	"github.com/IPFS-eX/go-bitswap/network"
+	"github.com/IPFS-eX/go-blockservice"
+	exchange "github.com/IPFS-eX/go-ipfs-exchange-interface"
+	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
+	"github.com/IPFS-eX/go-merkledag"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-filestore"
-	"github.com/ipfs/go-ipfs-blockstore"
-	"github.com/ipfs/go-ipfs-exchange-interface"
-	"github.com/ETHFSx/go-ipfs-exchange-offline"
-	"github.com/ipfs/go-ipfs-pinner"
-	"github.com/ipfs/go-ipld-format"
-	"github.com/ETHFSx/go-merkledag"
+	blockstore "github.com/ipfs/go-ipfs-blockstore"
+	pin "github.com/ipfs/go-ipfs-pinner"
+	format "github.com/ipfs/go-ipld-format"
 	_merkledag "github.com/ipfs/go-merkledag"
 	"github.com/ipfs/go-mfs"
 	"github.com/ipfs/go-unixfs"
@@ -23,8 +23,8 @@ import (
 	"github.com/libp2p/go-libp2p-core/routing"
 	"go.uber.org/fx"
 
-	"github.com/ETHFSx/go-ipfs/core/node/helpers"
-	"github.com/ETHFSx/go-ipfs/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node/helpers"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
 )
 
 // BlockService creates new blockservice which provides an interface to fetch content-addressable blocks

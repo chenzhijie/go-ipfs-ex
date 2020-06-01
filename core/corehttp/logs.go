@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/http"
 
-	core "github.com/ETHFSx/go-ipfs/core"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
 	lwriter "github.com/ipfs/go-log/writer"
 )
 

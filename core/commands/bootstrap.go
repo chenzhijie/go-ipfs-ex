@@ -6,9 +6,9 @@ import (
 	"io"
 	"sort"
 
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
-	repo "github.com/ETHFSx/go-ipfs/repo"
-	fsrepo "github.com/ETHFSx/go-ipfs/repo/fsrepo"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	repo "github.com/IPFS-eX/go-ipfs-ex/repo"
+	fsrepo "github.com/IPFS-eX/go-ipfs-ex/repo/fsrepo"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	config "github.com/ipfs/go-ipfs-config"

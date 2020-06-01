@@ -7,10 +7,10 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/ipfs/go-filestore"
-	"github.com/ETHFSx/go-ipfs/core/node/helpers"
-	"github.com/ETHFSx/go-ipfs/repo"
-	"github.com/ETHFSx/go-ipfs/thirdparty/cidv0v1"
-	"github.com/ETHFSx/go-ipfs/thirdparty/verifbs"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node/helpers"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/thirdparty/cidv0v1"
+	"github.com/IPFS-eX/go-ipfs-ex/thirdparty/verifbs"
 )
 
 // RepoConfig loads configuration from the repo

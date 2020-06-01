@@ -6,15 +6,15 @@ import (
 	"strings"
 	"time"
 
-	core "github.com/ETHFSx/go-ipfs/core"
-	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
-	loader "github.com/ETHFSx/go-ipfs/plugin/loader"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	coreapi "github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
+	loader "github.com/IPFS-eX/go-ipfs-ex/plugin/loader"
 
 	"github.com/ipfs/go-ipfs-cmds"
 	config "github.com/ipfs/go-ipfs-config"
 	logging "github.com/ipfs/go-log"
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
 )
 
 var log = logging.Logger("command")

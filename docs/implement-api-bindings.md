@@ -102,7 +102,7 @@ Currently, node-ipfs-api has three main files
 
 Despite all the generalization spoken about above, the IPFS API is actually very
 simple. You can inspect all the requests made with `nc` and the `--api` option
-(as of [this PR](https://github.com/ETHFSx/go-ipfs/pull/1598), or `0.3.8`):
+(as of [this PR](https://github.com/IPFS-eX/go-ipfs-ex/pull/1598), or `0.3.8`):
 
 ```
 > nc -l 5002 &

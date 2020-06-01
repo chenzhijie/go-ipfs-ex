@@ -9,7 +9,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/ETHFSx/go-ipfs/thirdparty/unit"
+	"github.com/IPFS-eX/go-ipfs-ex/thirdparty/unit"
 
 	config "github.com/ipfs/go-ipfs-config"
 	random "github.com/jbenet/go-random"

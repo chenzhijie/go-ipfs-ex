@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ETHFSx/go-ipfs/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
 
 	"github.com/libp2p/go-libp2p"
 	"github.com/libp2p/go-libp2p-core/host"

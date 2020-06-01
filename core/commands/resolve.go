@@ -7,16 +7,16 @@ import (
 	"strings"
 	"time"
 
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
-	ncmd "github.com/ETHFSx/go-ipfs/core/commands/name"
-	ns "github.com/ETHFSx/go-ipfs/namesys"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	ncmd "github.com/IPFS-eX/go-ipfs-ex/core/commands/name"
+	ns "github.com/IPFS-eX/go-ipfs-ex/namesys"
 
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	ipfspath "github.com/ipfs/go-path"
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
-	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
-	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	nsopts "github.com/IPFS-eX/interface-go-ipfs-core/options/namesys"
+	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 const (

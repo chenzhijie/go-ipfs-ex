@@ -1,7 +1,7 @@
 package commands
 
 import (
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	"github.com/ipfs/go-ipfs-cmds"
 )

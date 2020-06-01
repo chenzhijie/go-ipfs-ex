@@ -6,7 +6,7 @@ import (
 	"time"
 
 	path "github.com/ipfs/go-path"
-	opts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
+	opts "github.com/IPFS-eX/interface-go-ipfs-core/options/namesys"
 )
 
 type onceResult struct {

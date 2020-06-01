@@ -11,9 +11,9 @@ import (
 	"github.com/libp2p/go-libp2p-core/routing"
 	"github.com/libp2p/go-libp2p-record"
 
-	"github.com/ETHFSx/go-ipfs/namesys"
-	"github.com/ETHFSx/go-ipfs/namesys/republisher"
-	"github.com/ETHFSx/go-ipfs/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/namesys"
+	"github.com/IPFS-eX/go-ipfs-ex/namesys/republisher"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
 )
 
 const DefaultIpnsCacheSize = 128

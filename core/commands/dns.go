@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	ncmd "github.com/ETHFSx/go-ipfs/core/commands/name"
-	namesys "github.com/ETHFSx/go-ipfs/namesys"
-	nsopts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
+	ncmd "github.com/IPFS-eX/go-ipfs-ex/core/commands/name"
+	namesys "github.com/IPFS-eX/go-ipfs-ex/namesys"
+	nsopts "github.com/IPFS-eX/interface-go-ipfs-core/options/namesys"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 )

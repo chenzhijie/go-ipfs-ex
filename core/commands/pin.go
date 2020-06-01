@@ -8,20 +8,20 @@ import (
 	"os"
 	"time"
 
-	bserv "github.com/ETHFSx/go-blockservice"
+	bserv "github.com/IPFS-eX/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
 	cmds "github.com/ipfs/go-ipfs-cmds"
-	offline "github.com/ipfs/go-ipfs-exchange-offline"
-	dag "github.com/ETHFSx/go-merkledag"
+	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
+	dag "github.com/IPFS-eX/go-merkledag"
 	verifcid "github.com/ipfs/go-verifcid"
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
-	"github.com/ETHFSx/interface-go-ipfs-core/path"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	"github.com/IPFS-eX/interface-go-ipfs-core/path"
 
-	core "github.com/ETHFSx/go-ipfs/core"
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
-	e "github.com/ETHFSx/go-ipfs/core/commands/e"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	e "github.com/IPFS-eX/go-ipfs-ex/core/commands/e"
 )
 
 var PinCmd = &cmds.Command{

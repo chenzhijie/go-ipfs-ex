@@ -7,15 +7,15 @@ import (
 	"fmt"
 	"strings"
 
-	bserv "github.com/ETHFSx/go-blockservice"
+	bserv "github.com/IPFS-eX/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	dstore "github.com/ipfs/go-datastore"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
-	offline "github.com/ETHFSx/go-ipfs-exchange-offline"
+	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
 	pin "github.com/ipfs/go-ipfs-pinner"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
-	dag "github.com/ETHFSx/go-merkledag"
+	dag "github.com/IPFS-eX/go-merkledag"
 	"github.com/ipfs/go-verifcid"
 )
 

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	peer "github.com/libp2p/go-libp2p-core/peer"

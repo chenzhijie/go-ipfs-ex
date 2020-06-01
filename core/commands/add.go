@@ -8,12 +8,12 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	files "github.com/ipfs/go-ipfs-files"
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
-	"github.com/ETHFSx/interface-go-ipfs-core/options"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
+	"github.com/IPFS-eX/interface-go-ipfs-core/options"
 	mh "github.com/multiformats/go-multihash"
 	pb "gopkg.in/cheggaaa/pb.v1"
 )

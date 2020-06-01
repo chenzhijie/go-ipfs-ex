@@ -8,38 +8,38 @@ define go-build-testdep
 	$(GOCC) build $(go-flags-with-tags) -o "$${OUT}" "$<"
 endef
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/pollEndpoint
-$(d)/pollEndpoint: github.com/ETHFSx/go-ipfs/test/dependencies/pollEndpoint
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/pollEndpoint
+$(d)/pollEndpoint: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/pollEndpoint
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/pollEndpoint
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/go-sleep
-$(d)/go-sleep: github.com/ETHFSx/go-ipfs/test/dependencies/go-sleep
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/go-sleep
+$(d)/go-sleep: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/go-sleep
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/go-sleep
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/graphsync-get
-$(d)/graphsync-get: github.com/ETHFSx/go-ipfs/test/dependencies/graphsync-get
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/graphsync-get
+$(d)/graphsync-get: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/graphsync-get
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/graphsync-get
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/go-timeout
-$(d)/go-timeout: github.com/ETHFSx/go-ipfs/test/dependencies/go-timeout
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/go-timeout
+$(d)/go-timeout: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/go-timeout
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/go-timeout
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/iptb
-$(d)/iptb: github.com/ETHFSx/go-ipfs/test/dependencies/iptb
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/iptb
+$(d)/iptb: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/iptb
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/iptb
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/ma-pipe-unidir
-$(d)/ma-pipe-unidir: github.com/ETHFSx/go-ipfs/test/dependencies/ma-pipe-unidir
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/ma-pipe-unidir
+$(d)/ma-pipe-unidir: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/ma-pipe-unidir
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/ma-pipe-unidir
 
-.PHONY: github.com/ETHFSx/go-ipfs/test/dependencies/json-to-junit
-$(d)/json-to-junit: github.com/ETHFSx/go-ipfs/test/dependencies/json-to-junit
+.PHONY: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/json-to-junit
+$(d)/json-to-junit: github.com/IPFS-eX/go-ipfs-ex/test/dependencies/json-to-junit
 	$(go-build-testdep)
 TGTS_$(d) += $(d)/json-to-junit
 

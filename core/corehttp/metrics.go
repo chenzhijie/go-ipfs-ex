@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/http"
 
-	core "github.com/ETHFSx/go-ipfs/core"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
 
 	prometheus "github.com/prometheus/client_golang/prometheus"
 	promhttp "github.com/prometheus/client_golang/prometheus/promhttp"

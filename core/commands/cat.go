@@ -6,12 +6,12 @@ import (
 	"io"
 	"os"
 
-	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	"github.com/ipfs/go-ipfs-cmds"
 	"github.com/ipfs/go-ipfs-files"
-	"github.com/ETHFSx/interface-go-ipfs-core"
-	"github.com/ETHFSx/interface-go-ipfs-core/path"
+	"github.com/IPFS-eX/interface-go-ipfs-core"
+	"github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 const (

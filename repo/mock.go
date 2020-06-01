@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	filestore "github.com/ipfs/go-filestore"
-	keystore "github.com/ETHFSx/go-ipfs/keystore"
+	keystore "github.com/IPFS-eX/go-ipfs-ex/keystore"
 
 	config "github.com/ipfs/go-ipfs-config"
 	ma "github.com/multiformats/go-multiaddr"

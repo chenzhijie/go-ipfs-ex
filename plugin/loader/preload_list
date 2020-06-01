@@ -3,8 +3,8 @@
 #
 # name             go-path                  number of the sub-plugin or *
 
-ipldgit github.com/ETHFSx/go-ipfs/plugin/plugins/git *
+ipldgit github.com/IPFS-eX/go-ipfs-ex/plugin/plugins/git *
 
-badgerds github.com/ETHFSx/go-ipfs/plugin/plugins/badgerds *
-flatfs github.com/ETHFSx/go-ipfs/plugin/plugins/flatfs *
-levelds github.com/ETHFSx/go-ipfs/plugin/plugins/levelds *
+badgerds github.com/IPFS-eX/go-ipfs-ex/plugin/plugins/badgerds *
+flatfs github.com/IPFS-eX/go-ipfs-ex/plugin/plugins/flatfs *
+levelds github.com/IPFS-eX/go-ipfs-ex/plugin/plugins/levelds *

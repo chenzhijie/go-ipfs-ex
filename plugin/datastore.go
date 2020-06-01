@@ -1,7 +1,7 @@
 package plugin
 
 import (
-	"github.com/ETHFSx/go-ipfs/repo/fsrepo"
+	"github.com/IPFS-eX/go-ipfs-ex/repo/fsrepo"
 )
 
 // PluginDatastore is an interface that can be implemented to add handlers for

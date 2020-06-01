@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ETHFSx/go-ipfs/thirdparty/assert"
+	"github.com/IPFS-eX/go-ipfs-ex/thirdparty/assert"
 
 	datastore "github.com/ipfs/go-datastore"
 	config "github.com/ipfs/go-ipfs-config"

@@ -12,10 +12,10 @@ import (
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 
-	"github.com/ETHFSx/go-ipfs/core/node/libp2p"
-	"github.com/ETHFSx/go-ipfs/p2p"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node/libp2p"
+	"github.com/IPFS-eX/go-ipfs-ex/p2p"
 
-	offline "github.com/ipfs/go-ipfs-exchange-offline"
+	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
 	offroute "github.com/ipfs/go-ipfs-routing/offline"
 	"github.com/ipfs/go-path/resolver"
 	uio "github.com/ipfs/go-unixfs/io"

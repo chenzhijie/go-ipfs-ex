@@ -4,9 +4,9 @@
 package ipns
 
 import (
-	core "github.com/ETHFSx/go-ipfs/core"
-	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
-	mount "github.com/ETHFSx/go-ipfs/fuse/mount"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	coreapi "github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
+	mount "github.com/IPFS-eX/go-ipfs-ex/fuse/mount"
 )
 
 // Mount mounts ipns at a given location, and returns a mount.Mount instance.

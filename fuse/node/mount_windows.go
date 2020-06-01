@@ -1,7 +1,7 @@
 package node
 
 import (
-	"github.com/ETHFSx/go-ipfs/core"
+	"github.com/IPFS-eX/go-ipfs-ex/core"
 )
 
 func Mount(node *core.IpfsNode, fsdir, nsdir string) error {

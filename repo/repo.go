@@ -5,7 +5,7 @@ import (
 	"io"
 
 	filestore "github.com/ipfs/go-filestore"
-	keystore "github.com/ETHFSx/go-ipfs/keystore"
+	keystore "github.com/IPFS-eX/go-ipfs-ex/keystore"
 
 	ds "github.com/ipfs/go-datastore"
 	config "github.com/ipfs/go-ipfs-config"

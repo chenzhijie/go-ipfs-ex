@@ -35,31 +35,31 @@ The goal of this document is to capture the code flow for adding a file (see the
 
 ## Code Flow
 
-**[`UnixfsAPI.Add()`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreapi/unixfs.go#L31)** - *Entrypoint into the `Unixfs` package*
+**[`UnixfsAPI.Add()`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreapi/unixfs.go#L31)** - *Entrypoint into the `Unixfs` package*
 
 The `UnixfsAPI.Add()` acts on the input data or files, to build a _merkledag_ node (in essence it is the entire tree represented by the root node) and adds it to the _blockstore_.
 Within the function, a new `Adder` is created with the configured `Blockstore` and __DAG service__`. 
 
-- **[`adder.AddAllAndPin(files)`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L403)** - *Entrypoint to the `Add` logic*
+- **[`adder.AddAllAndPin(files)`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L403)** - *Entrypoint to the `Add` logic*
     encapsulates a lot of the underlying functionality that will be investigated in the following sections. 
 
     Our focus will be on the simplest case, a single file, handled by `Adder.addFile(file files.File)`. 
 
-  - **[`adder.addFile(file files.File)`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L450)** - *Create the _DAG_ and add to `MFS`*
+  - **[`adder.addFile(file files.File)`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L450)** - *Create the _DAG_ and add to `MFS`*
 
       The `addFile(file)` method takes the data and converts it into a __DAG__ tree and adds the root of the tree into the `MFS`.
 
-      https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L508-L521
+      https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L508-L521
 
       There are two main methods to focus on -
 
-      1. **[`adder.add(io.Reader)`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L115)** - *Create and return the **root** __DAG__ node*
+      1. **[`adder.add(io.Reader)`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L115)** - *Create and return the **root** __DAG__ node*
 
           This method converts the input data (`io.Reader`) to a __DAG__ tree, by splitting the data into _chunks_ using the `Chunker` and organizing them in to a __DAG__ (with a *trickle* or *balanced* layout. See [balanced](https://github.com/ipfs/go-unixfs/blob/6b769632e7eb8fe8f302e3f96bf5569232e7a3ee/importer/balanced/builder.go) for more info). 
 
           The method returns the **root** `ipld.Node` of the __DAG__.
 
-      2. **[`adder.addNode(ipld.Node, path)`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L366)** - *Add **root** __DAG__ node to the `MFS`*
+      2. **[`adder.addNode(ipld.Node, path)`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L366)** - *Add **root** __DAG__ node to the `MFS`*
 
           Now that we have the **root** node of the `DAG`, this needs to be added to the `MFS` file system. 
           Fetch (or create, if doesn't already exist) the `MFS` **root** using `mfsRoot()`. 
@@ -93,10 +93,10 @@ Within the function, a new `Adder` is created with the configured `Blockstore` a
 
                   The `AddNodeLink()` method is where an `ipld.Link` is created with the `ipld.Node`'s `CID` and size in the `ipld.MakeLink(ipld.Node)` method, and is then appended to the `ProtoNode`'s links in the `ProtoNode.AddRawLink(name)` method.
 
-  - **[`adder.Finalize()`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L200)** - *Fetch and return the __DAG__ **root** from the `MFS` and `UnixFS` directory*
+  - **[`adder.Finalize()`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L200)** - *Fetch and return the __DAG__ **root** from the `MFS` and `UnixFS` directory*
 
       The `Finalize` method returns the `ipld.Node` from the `UnixFS` `Directory`.
 
-  - **[`adder.PinRoot()`](https://github.com/ETHFSx/go-ipfs/blob/v0.4.18/core/coreunix/add.go#L171)** - *Pin all files under the `MFS` **root***
+  - **[`adder.PinRoot()`](https://github.com/IPFS-eX/go-ipfs-ex/blob/v0.4.18/core/coreunix/add.go#L171)** - *Pin all files under the `MFS` **root***
 
     The whole process ends with `PinRoot` recursively pinning all the files under the `MFS` **root**

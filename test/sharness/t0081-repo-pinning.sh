@@ -51,7 +51,7 @@ test_init_ipfs
 
 # test runs much faster without daemon.
 # TODO: turn this back on after:
-# https://github.com/ETHFSx/go-ipfs/issues/1075
+# https://github.com/IPFS-eX/go-ipfs-ex/issues/1075
 # test_launch_ipfs_daemon
 
 HASH_FILE6="QmRsBC3Y2G6VRPYGAVpZczx1W7Xw54MtM1NcLKTkn6rx3U"
@@ -244,7 +244,7 @@ test_expect_success "recursive pin fails without objects" '
   test_fsh cat err_expected8
 '
 
-# Regression test for https://github.com/ETHFSx/go-ipfs/issues/4650
+# Regression test for https://github.com/IPFS-eX/go-ipfs-ex/issues/4650
 # This test requires the daemon. Otherwise, the pin changes are reverted when
 # the pin fails in the previous test.
 test_expect_success "failed recursive pin does not remove direct pin" '

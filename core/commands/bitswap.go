@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"io"
 
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
-	e "github.com/ETHFSx/go-ipfs/core/commands/e"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	e "github.com/IPFS-eX/go-ipfs-ex/core/commands/e"
 
 	humanize "github.com/dustin/go-humanize"
-	bitswap "github.com/ETHFSx/go-bitswap"
-	decision "github.com/ETHFSx/go-bitswap/decision"
+	bitswap "github.com/IPFS-eX/go-bitswap"
+	decision "github.com/IPFS-eX/go-bitswap/decision"
 	cidutil "github.com/ipfs/go-cidutil"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	peer "github.com/libp2p/go-libp2p-core/peer"

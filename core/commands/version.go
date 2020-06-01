@@ -8,7 +8,7 @@ import (
 	"runtime/debug"
 
 	version "github.com/ipfs/go-ipfs"
-	fsrepo "github.com/ETHFSx/go-ipfs/repo/fsrepo"
+	fsrepo "github.com/IPFS-eX/go-ipfs-ex/repo/fsrepo"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 )

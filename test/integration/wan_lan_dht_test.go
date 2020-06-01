@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/ipfs/go-cid"
-	"github.com/ETHFSx/go-ipfs/core"
-	mock "github.com/ETHFSx/go-ipfs/core/mock"
-	libp2p2 "github.com/ETHFSx/go-ipfs/core/node/libp2p"
+	"github.com/IPFS-eX/go-ipfs-ex/core"
+	mock "github.com/IPFS-eX/go-ipfs-ex/core/mock"
+	libp2p2 "github.com/IPFS-eX/go-ipfs-ex/core/node/libp2p"
 
 	corenet "github.com/libp2p/go-libp2p-core/network"
 	"github.com/libp2p/go-libp2p-core/peerstore"

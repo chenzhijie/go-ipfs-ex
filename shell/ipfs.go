@@ -8,7 +8,7 @@ package shell
 import (
 	"os"
 
-	"github.com/ETHFSx/go-ipfs/shell/ipfs"
+	"github.com/IPFS-eX/go-ipfs-ex/shell/ipfs"
 )
 
 const DefaultIpfsDir = "~/.ipfs"

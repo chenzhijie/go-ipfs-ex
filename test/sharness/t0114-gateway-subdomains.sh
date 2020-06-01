@@ -165,7 +165,7 @@ test_localhost_gateway_response_should_contain \
   "Location: http://$DIR_CID.ipfs.localhost:$GWAY_PORT/"
 
 # Responses to the root domain of subdomain gateway hostname should Clear-Site-Data
-# https://github.com/ETHFSx/go-ipfs/issues/6975#issuecomment-597472477
+# https://github.com/IPFS-eX/go-ipfs-ex/issues/6975#issuecomment-597472477
 test_localhost_gateway_response_should_contain \
   "request for localhost/ipfs/{CIDv1} returns Clear-Site-Data header to purge Origin cookies and storage" \
   "http://localhost:$GWAY_PORT/ipfs/$CIDv1" \
@@ -174,7 +174,7 @@ test_localhost_gateway_response_should_contain \
 # We return body with HTTP 301 so existing cli scripts that use path-based
 # gateway do not break (curl doesn't auto-redirect without passing -L; wget
 # does not span across hostnames by default)
-# Context: https://github.com/ETHFSx/go-ipfs/issues/6975
+# Context: https://github.com/IPFS-eX/go-ipfs-ex/issues/6975
 test_localhost_gateway_response_should_contain \
   "request for localhost/ipfs/{CIDv1} includes valid payload in body for CLI tools like curl" \
   "http://localhost:$GWAY_PORT/ipfs/$CIDv1" \

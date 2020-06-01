@@ -10,11 +10,11 @@ import (
 	blocks "github.com/ipfs/go-block-format"
 	cid "github.com/ipfs/go-cid"
 	pin "github.com/ipfs/go-ipfs-pinner"
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
-	caopts "github.com/ETHFSx/interface-go-ipfs-core/options"
-	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
+	caopts "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 	"github.com/libp2p/go-libp2p-core/peer"
-	util "github.com/ETHFSx/go-ipfs/blocks/blockstoreutil"
+	util "github.com/IPFS-eX/go-ipfs-ex/blocks/blockstoreutil"
 )
 
 type BlockAPI CoreAPI

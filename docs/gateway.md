@@ -13,7 +13,7 @@ gateway.
 ## Configuration
 
 The gateway's configuration options are (briefly) described in the
-[config](https://github.com/ETHFSx/go-ipfs/blob/master/docs/config.md#gateway)
+[config](https://github.com/IPFS-eX/go-ipfs-ex/blob/master/docs/config.md#gateway)
 documentation.
 
 ## Directories
@@ -28,7 +28,7 @@ a directory:
 2. Dynamically build and serve a listing of the contents of the directory.
 
 <sub><sup>&dagger;</sup>This redirect is skipped if the query string contains a
-`go-get=1` parameter. See [PR#3964](https://github.com/ETHFSx/go-ipfs/pull/3963)
+`go-get=1` parameter. See [PR#3964](https://github.com/IPFS-eX/go-ipfs-ex/pull/3963)
 for details</sub>
 
 ## Static Websites

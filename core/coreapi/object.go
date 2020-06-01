@@ -17,9 +17,9 @@ import (
 	dag "github.com/ipfs/go-merkledag"
 	"github.com/ipfs/go-merkledag/dagutils"
 	ft "github.com/ipfs/go-unixfs"
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
-	caopts "github.com/ETHFSx/interface-go-ipfs-core/options"
-	ipath "github.com/ETHFSx/interface-go-ipfs-core/path"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
+	caopts "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	ipath "github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 const inputLimit = 2 << 20

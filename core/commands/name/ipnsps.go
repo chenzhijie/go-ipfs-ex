@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/ipfs/go-ipfs-cmds"
-	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 	"github.com/libp2p/go-libp2p-core/peer"
 	"github.com/libp2p/go-libp2p-record"
 )

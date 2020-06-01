@@ -6,12 +6,12 @@ import (
 	"io"
 	"time"
 
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
-	iface "github.com/ETHFSx/interface-go-ipfs-core"
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
-	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	iface "github.com/IPFS-eX/interface-go-ipfs-core"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 var (

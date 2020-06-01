@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ETHFSx/go-ipfs/thirdparty/assert"
+	"github.com/IPFS-eX/go-ipfs-ex/thirdparty/assert"
 
 	protocol "github.com/libp2p/go-libp2p-core/protocol"
 )

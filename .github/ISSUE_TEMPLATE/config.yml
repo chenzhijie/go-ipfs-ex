@@ -4,10 +4,10 @@ contact_links:
    url: https://ipfs.io/help
    about: All information about how and where to get help on IPFS.
  - name: Go-ipfs configuration reference
-   url: https://github.com/ETHFSx/go-ipfs/blob/master/docs/config.md
+   url: https://github.com/IPFS-eX/go-ipfs-ex/blob/master/docs/config.md
    about: Documentation on the different configuration settings
  - name: Go-ipfs experimental features docs
-   url: https://github.com/ETHFSx/go-ipfs/blob/master/docs/experimental-features.md
+   url: https://github.com/IPFS-eX/go-ipfs-ex/blob/master/docs/experimental-features.md
    about: Documentation on Private Networks, Filestore and other experimental features.
  - name: HTTP API Reference
    url: https://docs-beta.ipfs.io/reference/http/api/#api-v0-add

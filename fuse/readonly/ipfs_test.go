@@ -18,9 +18,9 @@ import (
 
 	"bazil.org/fuse"
 
-	core "github.com/ETHFSx/go-ipfs/core"
-	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
-	coremock "github.com/ETHFSx/go-ipfs/core/mock"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	coreapi "github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
+	coremock "github.com/IPFS-eX/go-ipfs-ex/core/mock"
 
 	fstest "bazil.org/fuse/fs/fstestutil"
 	chunker "github.com/ipfs/go-ipfs-chunker"
@@ -30,7 +30,7 @@ import (
 	dag "github.com/ipfs/go-merkledag"
 	importer "github.com/ipfs/go-unixfs/importer"
 	uio "github.com/ipfs/go-unixfs/io"
-	ipath "github.com/ETHFSx/interface-go-ipfs-core/path"
+	ipath "github.com/IPFS-eX/interface-go-ipfs-core/path"
 	ci "github.com/libp2p/go-libp2p-testing/ci"
 )
 

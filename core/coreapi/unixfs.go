@@ -5,27 +5,27 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ETHFSx/go-ipfs/core"
+	"github.com/IPFS-eX/go-ipfs-ex/core"
 
-	"github.com/ETHFSx/go-ipfs/core/coreunix"
+	"github.com/IPFS-eX/go-ipfs-ex/core/coreunix"
 
-	blockservice "github.com/ETHFSx/go-blockservice"
+	blockservice "github.com/IPFS-eX/go-blockservice"
 	cid "github.com/ipfs/go-cid"
 	cidutil "github.com/ipfs/go-cidutil"
 	filestore "github.com/ipfs/go-filestore"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
 	files "github.com/ipfs/go-ipfs-files"
 	ipld "github.com/ipfs/go-ipld-format"
-	dag "github.com/ETHFSx/go-merkledag"
+	dag "github.com/IPFS-eX/go-merkledag"
 	merkledag "github.com/ipfs/go-merkledag"
 	dagtest "github.com/ipfs/go-merkledag/test"
 	mfs "github.com/ipfs/go-mfs"
 	ft "github.com/ipfs/go-unixfs"
 	unixfile "github.com/ipfs/go-unixfs/file"
 	uio "github.com/ipfs/go-unixfs/io"
-	coreiface "github.com/ETHFSx/interface-go-ipfs-core"
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
-	path "github.com/ETHFSx/interface-go-ipfs-core/path"
+	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
+	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 type UnixfsAPI CoreAPI

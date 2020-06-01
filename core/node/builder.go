@@ -8,9 +8,9 @@ import (
 
 	"go.uber.org/fx"
 
-	"github.com/ETHFSx/go-ipfs/core/node/helpers"
-	"github.com/ETHFSx/go-ipfs/core/node/libp2p"
-	"github.com/ETHFSx/go-ipfs/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node/helpers"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node/libp2p"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
 
 	ds "github.com/ipfs/go-datastore"
 	dsync "github.com/ipfs/go-datastore/sync"

@@ -11,7 +11,7 @@ import (
 	offline "github.com/ipfs/go-ipfs-routing/offline"
 	ipns "github.com/ipfs/go-ipns"
 	path "github.com/ipfs/go-path"
-	opts "github.com/ETHFSx/interface-go-ipfs-core/options/namesys"
+	opts "github.com/IPFS-eX/interface-go-ipfs-core/options/namesys"
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	peer "github.com/libp2p/go-libp2p-core/peer"
 	pstore "github.com/libp2p/go-libp2p-core/peerstore"

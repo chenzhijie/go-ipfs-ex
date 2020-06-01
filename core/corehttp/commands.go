@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	version "github.com/ipfs/go-ipfs"
-	oldcmds "github.com/ETHFSx/go-ipfs/commands"
-	"github.com/ETHFSx/go-ipfs/core"
-	corecommands "github.com/ETHFSx/go-ipfs/core/commands"
+	oldcmds "github.com/IPFS-eX/go-ipfs-ex/commands"
+	"github.com/IPFS-eX/go-ipfs-ex/core"
+	corecommands "github.com/IPFS-eX/go-ipfs-ex/core/commands"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	cmdsHttp "github.com/ipfs/go-ipfs-cmds/http"

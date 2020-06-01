@@ -3,11 +3,11 @@ package commands
 import (
 	"errors"
 
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
-	dag "github.com/ETHFSx/go-ipfs/core/commands/dag"
-	name "github.com/ETHFSx/go-ipfs/core/commands/name"
-	ocmd "github.com/ETHFSx/go-ipfs/core/commands/object"
-	unixfs "github.com/ETHFSx/go-ipfs/core/commands/unixfs"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	dag "github.com/IPFS-eX/go-ipfs-ex/core/commands/dag"
+	name "github.com/IPFS-eX/go-ipfs-ex/core/commands/name"
+	ocmd "github.com/IPFS-eX/go-ipfs-ex/core/commands/object"
+	unixfs "github.com/IPFS-eX/go-ipfs-ex/core/commands/unixfs"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	logging "github.com/ipfs/go-log"

@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	version "github.com/ipfs/go-ipfs"
-	core "github.com/ETHFSx/go-ipfs/core"
-	cmdenv "github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	ic "github.com/libp2p/go-libp2p-core/crypto"

@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/ETHFSx/go-blockservice"
+	"github.com/IPFS-eX/go-blockservice"
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
@@ -17,7 +17,7 @@ import (
 	"github.com/ipfs/go-graphsync/network"
 	"github.com/ipfs/go-graphsync/storeutil"
 	"github.com/ipfs/go-ipfs-blockstore"
-	"github.com/ipfs/go-ipfs-exchange-offline"
+	"github.com/IPFS-eX/go-ipfs-exchange-offline"
 	"github.com/ipfs/go-merkledag"
 	uio "github.com/ipfs/go-unixfs/io"
 	"github.com/ipld/go-ipld-prime"

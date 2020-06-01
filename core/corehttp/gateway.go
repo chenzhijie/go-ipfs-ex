@@ -7,10 +7,10 @@ import (
 	"sort"
 
 	version "github.com/ipfs/go-ipfs"
-	core "github.com/ETHFSx/go-ipfs/core"
-	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	coreapi "github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
 
-	options "github.com/ETHFSx/interface-go-ipfs-core/options"
+	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
 	id "github.com/libp2p/go-libp2p/p2p/protocol/identify"
 )
 

@@ -1,12 +1,13 @@
-module github.com/ETHFSx/go-ipfs
+module github.com/IPFS-eX/go-ipfs-ex
 
 require (
 	bazil.org/fuse v0.0.0-20200117225306-7b5117fecadc
-	github.com/ETHFSx/go-bitswap v0.2.15-rc.3
-	github.com/ETHFSx/go-blockservice v0.1.5-rc.1
-	github.com/ETHFSx/go-ipfs-exchange-offline v0.0.2-rc.0
-	github.com/ETHFSx/go-merkledag v0.3.3
-	github.com/ETHFSx/interface-go-ipfs-core v0.3.1-rc.1
+	github.com/IPFS-eX/go-bitswap v0.2.15-0.20200601110817-b62e4c3164eb
+	github.com/IPFS-eX/go-blockservice v0.1.4-0.20200601101959-b6d7f171ebf3
+	github.com/IPFS-eX/go-ipfs-exchange-interface v0.0.0-20200601100630-f19054f38398
+	github.com/IPFS-eX/go-ipfs-exchange-offline v0.0.0-20200601101646-594dab26c14c
+	github.com/IPFS-eX/go-merkledag v0.3.3-0.20200601102135-ff28562d6128
+	github.com/IPFS-eX/interface-go-ipfs-core v0.3.1-0.20200601100447-002d290d98fc
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/bren2010/proquint v0.0.0-20160323162903-38337c27106d
 	github.com/cheekybits/is v0.0.0-20150225183255-68e9c0620927
@@ -19,9 +20,7 @@ require (
 	github.com/gogo/protobuf v1.3.1
 	github.com/hashicorp/go-multierror v1.1.0
 	github.com/hashicorp/golang-lru v0.5.4
-	//github.com/ipfs/go-bitswap v0.2.13
 	github.com/ipfs/go-block-format v0.0.2
-	github.com/ipfs/go-blockservice v0.1.3
 	github.com/ipfs/go-cid v0.0.5
 	github.com/ipfs/go-cidutil v0.0.2
 	github.com/ipfs/go-datastore v0.4.4
@@ -40,8 +39,6 @@ require (
 	github.com/ipfs/go-ipfs-cmds v0.2.9
 	github.com/ipfs/go-ipfs-config v0.5.3
 	github.com/ipfs/go-ipfs-ds-help v0.1.1
-	github.com/ipfs/go-ipfs-exchange-interface v0.0.1
-	github.com/ipfs/go-ipfs-exchange-offline v0.0.1
 	github.com/ipfs/go-ipfs-files v0.0.8
 	github.com/ipfs/go-ipfs-pinner v0.0.4
 	github.com/ipfs/go-ipfs-posinfo v0.0.1
@@ -89,6 +86,7 @@ require (
 	github.com/libp2p/go-libp2p-yamux v0.2.7
 	github.com/libp2p/go-maddr-filter v0.0.5
 	github.com/libp2p/go-socket-activation v0.0.2
+	github.com/mattn/go-runewidth v0.0.9 // indirect
 	github.com/miekg/dns v1.1.29 // indirect
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mr-tron/base58 v1.1.3

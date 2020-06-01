@@ -7,19 +7,19 @@ import (
 	"io/ioutil"
 	"testing"
 
-	bserv "github.com/ETHFSx/go-blockservice"
-	core "github.com/ETHFSx/go-ipfs/core"
+	bserv "github.com/IPFS-eX/go-blockservice"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
 	merkledag "github.com/ipfs/go-merkledag"
 	ft "github.com/ipfs/go-unixfs"
 	importer "github.com/ipfs/go-unixfs/importer"
 	uio "github.com/ipfs/go-unixfs/io"
 
+	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
 	cid "github.com/ipfs/go-cid"
 	ds "github.com/ipfs/go-datastore"
 	dssync "github.com/ipfs/go-datastore/sync"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
 	chunker "github.com/ipfs/go-ipfs-chunker"
-	offline "github.com/ipfs/go-ipfs-exchange-offline"
 	u "github.com/ipfs/go-ipfs-util"
 	ipld "github.com/ipfs/go-ipld-format"
 )

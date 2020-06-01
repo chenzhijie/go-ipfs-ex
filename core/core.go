@@ -14,13 +14,13 @@ import (
 	"io"
 
 	"github.com/ipfs/go-filestore"
-	"github.com/ipfs/go-ipfs-pinner"
+	pin "github.com/ipfs/go-ipfs-pinner"
 
-	bserv "github.com/ETHFSx/go-blockservice"
+	bserv "github.com/IPFS-eX/go-blockservice"
+	exchange "github.com/IPFS-eX/go-ipfs-exchange-interface"
 	"github.com/ipfs/go-graphsync"
 	bstore "github.com/ipfs/go-ipfs-blockstore"
-	exchange "github.com/ipfs/go-ipfs-exchange-interface"
-	"github.com/ipfs/go-ipfs-provider"
+	provider "github.com/ipfs/go-ipfs-provider"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
 	mfs "github.com/ipfs/go-mfs"
@@ -40,14 +40,14 @@ import (
 	"github.com/libp2p/go-libp2p/p2p/discovery"
 	p2pbhost "github.com/libp2p/go-libp2p/p2p/host/basic"
 
-	"github.com/ETHFSx/go-ipfs/core/bootstrap"
-	"github.com/ETHFSx/go-ipfs/core/node"
-	"github.com/ETHFSx/go-ipfs/core/node/libp2p"
-	"github.com/ETHFSx/go-ipfs/fuse/mount"
-	"github.com/ETHFSx/go-ipfs/namesys"
-	ipnsrp "github.com/ETHFSx/go-ipfs/namesys/republisher"
-	"github.com/ETHFSx/go-ipfs/p2p"
-	"github.com/ETHFSx/go-ipfs/repo"
+	"github.com/IPFS-eX/go-ipfs-ex/core/bootstrap"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node"
+	"github.com/IPFS-eX/go-ipfs-ex/core/node/libp2p"
+	"github.com/IPFS-eX/go-ipfs-ex/fuse/mount"
+	"github.com/IPFS-eX/go-ipfs-ex/namesys"
+	ipnsrp "github.com/IPFS-eX/go-ipfs-ex/namesys/republisher"
+	"github.com/IPFS-eX/go-ipfs-ex/p2p"
+	"github.com/IPFS-eX/go-ipfs-ex/repo"
 )
 
 var log = logging.Logger("core")

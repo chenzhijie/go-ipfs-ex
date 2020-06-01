@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ETHFSx/go-ipfs/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	"github.com/ipfs/go-ipfs-cmds"
-	"github.com/ETHFSx/interface-go-ipfs-core/options"
-	"github.com/ETHFSx/interface-go-ipfs-core/path"
+	"github.com/IPFS-eX/interface-go-ipfs-core/options"
+	"github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 
 var ObjectPatchCmd = &cmds.Command{

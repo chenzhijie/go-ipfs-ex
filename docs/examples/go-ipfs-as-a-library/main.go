@@ -12,16 +12,16 @@ import (
 
 	config "github.com/ipfs/go-ipfs-config"
 	files "github.com/ipfs/go-ipfs-files"
-	libp2p "github.com/ETHFSx/go-ipfs/core/node/libp2p"
-	icore "github.com/ETHFSx/interface-go-ipfs-core"
-	icorepath "github.com/ETHFSx/interface-go-ipfs-core/path"
+	libp2p "github.com/IPFS-eX/go-ipfs-ex/core/node/libp2p"
+	icore "github.com/IPFS-eX/interface-go-ipfs-core"
+	icorepath "github.com/IPFS-eX/interface-go-ipfs-core/path"
 	peerstore "github.com/libp2p/go-libp2p-peerstore"
 	ma "github.com/multiformats/go-multiaddr"
 
-	"github.com/ETHFSx/go-ipfs/core"
-	"github.com/ETHFSx/go-ipfs/core/coreapi"
-	"github.com/ETHFSx/go-ipfs/plugin/loader" // This package is needed so that all the preloaded plugins are loaded automatically
-	"github.com/ETHFSx/go-ipfs/repo/fsrepo"
+	"github.com/IPFS-eX/go-ipfs-ex/core"
+	"github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
+	"github.com/IPFS-eX/go-ipfs-ex/plugin/loader" // This package is needed so that all the preloaded plugins are loaded automatically
+	"github.com/IPFS-eX/go-ipfs-ex/repo/fsrepo"
 	"github.com/libp2p/go-libp2p-core/peer"
 )
 

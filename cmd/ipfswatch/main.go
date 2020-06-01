@@ -9,11 +9,11 @@ import (
 	"path/filepath"
 	"syscall"
 
-	commands "github.com/ETHFSx/go-ipfs/commands"
-	core "github.com/ETHFSx/go-ipfs/core"
-	coreapi "github.com/ETHFSx/go-ipfs/core/coreapi"
-	corehttp "github.com/ETHFSx/go-ipfs/core/corehttp"
-	fsrepo "github.com/ETHFSx/go-ipfs/repo/fsrepo"
+	commands "github.com/IPFS-eX/go-ipfs-ex/commands"
+	core "github.com/IPFS-eX/go-ipfs-ex/core"
+	coreapi "github.com/IPFS-eX/go-ipfs-ex/core/coreapi"
+	corehttp "github.com/IPFS-eX/go-ipfs-ex/core/corehttp"
+	fsrepo "github.com/IPFS-eX/go-ipfs-ex/repo/fsrepo"
 
 	fsnotify "github.com/fsnotify/fsnotify"
 	config "github.com/ipfs/go-ipfs-config"

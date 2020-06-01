@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ETHFSx/go-ipfs/thirdparty/assert"
+	"github.com/IPFS-eX/go-ipfs-ex/thirdparty/assert"
 )
 
 func testVersionFile(v string, t *testing.T) (rp RepoPath) {
