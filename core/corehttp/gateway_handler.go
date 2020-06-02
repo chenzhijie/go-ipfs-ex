@@ -18,7 +18,7 @@ import (
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/ipfs/go-cid"
 	files "github.com/ipfs/go-ipfs-files"
-	dag "github.com/ipfs/go-merkledag"
+	dag "github.com/IPFS-eX/go-merkledag"
 	mfs "github.com/ipfs/go-mfs"
 	path "github.com/ipfs/go-path"
 	"github.com/ipfs/go-path/resolver"

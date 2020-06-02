@@ -16,7 +16,7 @@ import (
 	blockstore "github.com/ipfs/go-ipfs-blockstore"
 	pin "github.com/ipfs/go-ipfs-pinner"
 	format "github.com/ipfs/go-ipld-format"
-	_merkledag "github.com/ipfs/go-merkledag"
+	_merkledag "github.com/IPFS-eX/go-merkledag"
 	"github.com/ipfs/go-mfs"
 	"github.com/ipfs/go-unixfs"
 	"github.com/libp2p/go-libp2p-core/host"

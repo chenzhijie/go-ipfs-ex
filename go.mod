@@ -6,7 +6,7 @@ require (
 	github.com/IPFS-eX/go-blockservice v0.1.4-0.20200601101959-b6d7f171ebf3
 	github.com/IPFS-eX/go-ipfs-exchange-interface v0.0.0-20200601100630-f19054f38398
 	github.com/IPFS-eX/go-ipfs-exchange-offline v0.0.0-20200601101646-594dab26c14c
-	github.com/IPFS-eX/go-merkledag v0.3.3-0.20200601102135-ff28562d6128
+	github.com/IPFS-eX/go-merkledag v0.3.3-0.20200602102203-e992c6fd83af
 	github.com/IPFS-eX/interface-go-ipfs-core v0.3.1-0.20200601100447-002d290d98fc
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/bren2010/proquint v0.0.0-20160323162903-38337c27106d

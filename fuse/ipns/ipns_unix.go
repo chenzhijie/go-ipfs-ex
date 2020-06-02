@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	dag "github.com/ipfs/go-merkledag"
+	dag "github.com/IPFS-eX/go-merkledag"
 	ft "github.com/ipfs/go-unixfs"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 

@@ -25,6 +25,8 @@ github.com/IPFS-eX/go-ipfs-exchange-offline v0.0.0-20200601101646-594dab26c14c h
 github.com/IPFS-eX/go-ipfs-exchange-offline v0.0.0-20200601101646-594dab26c14c/go.mod h1:Zel8O9Jt7bGYnkTRi7MK/FDRNq/U+jVRqeJw0fa7tnY=
 github.com/IPFS-eX/go-merkledag v0.3.3-0.20200601102135-ff28562d6128 h1:W1jXfpE7t20tdtc6r4bm/udjOyEOudx3RMHMJf582Ro=
 github.com/IPFS-eX/go-merkledag v0.3.3-0.20200601102135-ff28562d6128/go.mod h1:bpz0a20CJEPL30mVPUkFYhJBbo4osQmkd7x52uPo4zQ=
+github.com/IPFS-eX/go-merkledag v0.3.3-0.20200602102203-e992c6fd83af h1:YfdSEwu2gnnFtf3TQMIHDp0+95KQ7bQ4KbLopSxM9Qk=
+github.com/IPFS-eX/go-merkledag v0.3.3-0.20200602102203-e992c6fd83af/go.mod h1:gXwZrTutWFwEOQho04IBaUzDXYQjbJUqR5a0kx8N0Co=
 github.com/IPFS-eX/interface-go-ipfs-core v0.3.1-0.20200601100447-002d290d98fc h1:vbsyDbkBuCNP55dgjCeK/geFYpoGppXuoev/42vOVhY=
 github.com/IPFS-eX/interface-go-ipfs-core v0.3.1-0.20200601100447-002d290d98fc/go.mod h1:dij0Q7EdwGG5xKi12VW/ClvSE0XnzUbO3gWBtRT36yw=
 github.com/Kubuxu/go-os-helper v0.0.1 h1:EJiD2VUQyh5A9hWJLmc6iWg6yIcJ7jpBcwC8GMGXfDk=
