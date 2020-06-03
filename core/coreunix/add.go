@@ -6,17 +6,12 @@ import (
 	"fmt"
 	"io"
 	gopath "path"
+	"path/filepath"
 	"strconv"
+	"strings"
 
-	"github.com/ipfs/go-cid"
-	bstore "github.com/ipfs/go-ipfs-blockstore"
-	chunker "github.com/ipfs/go-ipfs-chunker"
-	"github.com/ipfs/go-ipfs-files"
-	"github.com/ipfs/go-ipfs-pinner"
-	"github.com/ipfs/go-ipfs-posinfo"
-	ipld "github.com/ipfs/go-ipld-format"
-	logging "github.com/ipfs/go-log"
-	dag "github.com/ipfs/go-merkledag"
+	"github.com/IPFS-eX/go-ipfs-ex/core/crypto"
+	"github.com/IPFS-eX/go-ipfs-ex/core/prefix"
 	"github.com/IPFS-eX/go-mfs"
 	"github.com/IPFS-eX/go-unixfs"
 	"github.com/IPFS-eX/go-unixfs/importer/balanced"
@@ -24,6 +19,16 @@ import (
 	"github.com/IPFS-eX/go-unixfs/importer/trickle"
 	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
 	"github.com/IPFS-eX/interface-go-ipfs-core/path"
+	"github.com/ipfs/go-cid"
+	bstore "github.com/ipfs/go-ipfs-blockstore"
+	chunker "github.com/ipfs/go-ipfs-chunker"
+	files "github.com/ipfs/go-ipfs-files"
+	pin "github.com/ipfs/go-ipfs-pinner"
+	posinfo "github.com/ipfs/go-ipfs-posinfo"
+	ipld "github.com/ipfs/go-ipld-format"
+	logging "github.com/ipfs/go-log"
+	dag "github.com/ipfs/go-merkledag"
+	"github.com/libp2p/go-libp2p-core/peer"
 )
 
 var log = logging.Logger("coreunix")
@@ -78,6 +83,8 @@ type Adder struct {
 	unlocker   bstore.Unlocker
 	tempRoot   cid.Cid
 	CidBuilder cid.Builder
+	EncryptPwd string
+	Identify   peer.ID
 	liveNodes  uint64
 }
 
@@ -387,9 +394,36 @@ func (adder *Adder) addFile(path string, file files.File) error {
 	// if the progress flag was specified, wrap the file so that we can send
 	// progress updates to the client (over the output channel)
 	var reader io.Reader = file
+	password := adder.EncryptPwd
+	fi, ok := file.(files.FileInfo)
+	fileName := ""
+	if ok {
+		fileName = filepath.Base(fi.AbsPath())
+	}
+	owner := make([]byte, 0)
+	if len(adder.Identify) > 0 {
+		owner = []byte(adder.Identify.Pretty())
+	}
+
+	filePrefix := prefix.NewPrefix(owner, fileName, password)
+	if len(password) > 0 {
+		encryptedR, err := crypto.AESEncryptFileReader(file, password)
+		if err != nil {
+			log.Errorf("AESEncryptFileReader error : %s", err)
+			return err
+		}
+		reader = encryptedR
+		log.Debugf("encrypt file success")
+	} else {
+		log.Debugf("non-encrypt file")
+	}
+	// Insert prefix to identify a file
+	stringReader := strings.NewReader(filePrefix.String())
+	reader = io.MultiReader(stringReader, reader)
+
 	if adder.Progress {
 		rdr := &progressReader{file: reader, path: path, out: adder.Out}
-		if fi, ok := file.(files.FileInfo); ok {
+		if ok {
 			reader = &progressReader2{rdr, fi}
 		} else {
 			reader = rdr

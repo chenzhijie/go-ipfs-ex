@@ -10,10 +10,10 @@ import (
 
 	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
-	cmds "github.com/ipfs/go-ipfs-cmds"
-	files "github.com/ipfs/go-ipfs-files"
 	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
 	"github.com/IPFS-eX/interface-go-ipfs-core/options"
+	cmds "github.com/ipfs/go-ipfs-cmds"
+	files "github.com/ipfs/go-ipfs-files"
 	mh "github.com/multiformats/go-multihash"
 	pb "gopkg.in/cheggaaa/pb.v1"
 )
@@ -45,6 +45,7 @@ const (
 	hashOptionName        = "hash"
 	inlineOptionName      = "inline"
 	inlineLimitOptionName = "inline-limit"
+	encryptPwdOptionName  = "encryptPassword"
 )
 
 const adderOutChanSize = 8
@@ -136,6 +137,7 @@ only-hash, and progress/status related flags) will change the final hash.
 		cmds.StringOption(hashOptionName, "Hash function to use. Implies CIDv1 if not sha2-256. (experimental)").WithDefault("sha2-256"),
 		cmds.BoolOption(inlineOptionName, "Inline small blocks into CIDs. (experimental)"),
 		cmds.IntOption(inlineLimitOptionName, "Maximum block size to inline. (experimental)").WithDefault(32),
+		cmds.StringOption(encryptPwdOptionName, "Encrypt password to encrypt the file").WithDefault(""),
 	},
 	PreRun: func(req *cmds.Request, env cmds.Environment) error {
 		quiet, _ := req.Options[quietOptionName].(bool)
@@ -161,7 +163,10 @@ only-hash, and progress/status related flags) will change the final hash.
 		if err != nil {
 			return err
 		}
-
+		n, err := cmdenv.GetNode(env)
+		if err != nil {
+			return err
+		}
 		progress, _ := req.Options[progressOptionName].(bool)
 		trickle, _ := req.Options[trickleOptionName].(bool)
 		wrap, _ := req.Options[wrapOptionName].(bool)
@@ -176,6 +181,7 @@ only-hash, and progress/status related flags) will change the final hash.
 		hashFunStr, _ := req.Options[hashOptionName].(string)
 		inline, _ := req.Options[inlineOptionName].(bool)
 		inlineLimit, _ := req.Options[inlineLimitOptionName].(int)
+		encryptPwdStr, _ := req.Options[encryptPwdOptionName].(string)
 
 		hashFunCode, ok := mh.Names[strings.ToLower(hashFunStr)]
 		if !ok {
@@ -209,6 +215,8 @@ only-hash, and progress/status related flags) will change the final hash.
 
 			options.Unixfs.Progress(progress),
 			options.Unixfs.Silent(silent),
+			options.Unixfs.EncryptPwd(encryptPwdStr),
+			options.Unixfs.Identity(n.Identity),
 		}
 
 		if cidVerSet {

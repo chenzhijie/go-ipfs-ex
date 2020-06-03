@@ -10,15 +10,7 @@ import (
 	"github.com/IPFS-eX/go-ipfs-ex/core/coreunix"
 
 	blockservice "github.com/IPFS-eX/go-blockservice"
-	cid "github.com/ipfs/go-cid"
-	cidutil "github.com/ipfs/go-cidutil"
-	filestore "github.com/ipfs/go-filestore"
-	bstore "github.com/ipfs/go-ipfs-blockstore"
-	files "github.com/ipfs/go-ipfs-files"
-	ipld "github.com/ipfs/go-ipld-format"
 	dag "github.com/IPFS-eX/go-merkledag"
-	merkledag "github.com/ipfs/go-merkledag"
-	dagtest "github.com/ipfs/go-merkledag/test"
 	mfs "github.com/IPFS-eX/go-mfs"
 	ft "github.com/IPFS-eX/go-unixfs"
 	unixfile "github.com/IPFS-eX/go-unixfs/file"
@@ -26,6 +18,14 @@ import (
 	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
 	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
+	cid "github.com/ipfs/go-cid"
+	cidutil "github.com/ipfs/go-cidutil"
+	filestore "github.com/ipfs/go-filestore"
+	bstore "github.com/ipfs/go-ipfs-blockstore"
+	files "github.com/ipfs/go-ipfs-files"
+	ipld "github.com/ipfs/go-ipld-format"
+	merkledag "github.com/ipfs/go-merkledag"
+	dagtest "github.com/ipfs/go-merkledag/test"
 )
 
 type UnixfsAPI CoreAPI
@@ -134,6 +134,8 @@ func (api *UnixfsAPI) Add(ctx context.Context, files files.Node, opts ...options
 	fileAdder.RawLeaves = settings.RawLeaves
 	fileAdder.NoCopy = settings.NoCopy
 	fileAdder.CidBuilder = prefix
+	fileAdder.EncryptPwd = settings.EncryptPwd
+	fileAdder.Identify = settings.Identity
 
 	switch settings.Layout {
 	case options.BalancedLayout:
@@ -185,7 +187,6 @@ func (api *UnixfsAPI) Get(ctx context.Context, p path.Path) (files.Node, error) 
 	if err != nil {
 		return nil, err
 	}
-
 	return unixfile.NewUnixfsFile(ctx, ses.dag, nd)
 }
 

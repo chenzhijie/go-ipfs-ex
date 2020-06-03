@@ -13,10 +13,10 @@ import (
 
 	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 	"github.com/IPFS-eX/go-ipfs-ex/core/commands/e"
-
+	"github.com/IPFS-eX/go-ipfs-ex/core/crypto"
+	"github.com/IPFS-eX/interface-go-ipfs-core/path"
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	files "github.com/ipfs/go-ipfs-files"
-	"github.com/IPFS-eX/interface-go-ipfs-core/path"
 	"github.com/whyrusleeping/tar-utils"
 	"gopkg.in/cheggaaa/pb.v1"
 )
@@ -54,6 +54,7 @@ may also specify the level of compression by specifying '-l=<1-9>'.
 		cmds.BoolOption(archiveOptionName, "a", "Output a TAR archive."),
 		cmds.BoolOption(compressOptionName, "C", "Compress the output with GZIP compression."),
 		cmds.IntOption(compressionLevelOptionName, "l", "The level of compression (1-9)."),
+		cmds.StringOption(decryptPwdOptionName, "Decrypt password to decrypt the file").WithDefault(""),
 	},
 	PreRun: func(req *cmds.Request, env cmds.Environment) error {
 		_, err := getCompressOptions(req)
@@ -123,7 +124,20 @@ may also specify the level of compression by specifying '-l=<1-9>'.
 				Size:        int64(res.Length()),
 			}
 
-			return gw.Write(outReader, outPath)
+			err = gw.Write(outReader, outPath)
+			if err != nil {
+				return err
+			}
+			decryptPwdStr, _ := req.Options[decryptPwdOptionName].(string)
+			if len(decryptPwdStr) == 0 {
+				return nil
+			}
+			err = crypto.AESDecryptFile(outPath, decryptPwdStr, outPath+".origin")
+			if err != nil {
+				return err
+			}
+			fmt.Println("Decrypt success")
+			return nil
 		},
 	},
 }

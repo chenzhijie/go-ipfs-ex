@@ -55,9 +55,7 @@ require (
 	github.com/ipfs/go-merkledag v0.3.2
 	github.com/ipfs/go-metrics-interface v0.0.1
 	github.com/ipfs/go-metrics-prometheus v0.0.2
-	github.com/ipfs/go-mfs v0.1.1
 	github.com/ipfs/go-path v0.0.7
-	github.com/ipfs/go-unixfs v0.2.4
 	github.com/ipfs/go-verifcid v0.0.1
 	github.com/ipld/go-car v0.1.0
 	github.com/jbenet/go-is-domain v1.0.3
@@ -111,5 +109,7 @@ require (
 	golang.org/x/sys v0.0.0-20200420163511-1957bb5e6d1f
 	gopkg.in/cheggaaa/pb.v1 v1.0.28
 )
+
+replace github.com/IPFS-eX/interface-go-ipfs-core => ../interface-go-ipfs-core
 
 go 1.13

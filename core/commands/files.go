@@ -16,6 +16,8 @@ import (
 	bservice "github.com/IPFS-eX/go-blockservice"
 	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
 	dag "github.com/IPFS-eX/go-merkledag"
+	"github.com/IPFS-eX/go-mfs"
+	ft "github.com/IPFS-eX/go-unixfs"
 	iface "github.com/IPFS-eX/interface-go-ipfs-core"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 	"github.com/dustin/go-humanize"
@@ -24,8 +26,6 @@ import (
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
-	"github.com/IPFS-eX/go-mfs"
-	ft "github.com/IPFS-eX/go-unixfs"
 	mh "github.com/multiformats/go-multihash"
 )
 

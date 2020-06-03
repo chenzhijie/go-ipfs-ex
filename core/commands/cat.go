@@ -7,17 +7,19 @@ import (
 	"os"
 
 	"github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
+	"github.com/IPFS-eX/go-ipfs-ex/core/crypto"
 
-	"github.com/ipfs/go-ipfs-cmds"
-	"github.com/ipfs/go-ipfs-files"
-	"github.com/IPFS-eX/interface-go-ipfs-core"
+	iface "github.com/IPFS-eX/interface-go-ipfs-core"
 	"github.com/IPFS-eX/interface-go-ipfs-core/path"
+	cmds "github.com/ipfs/go-ipfs-cmds"
+	files "github.com/ipfs/go-ipfs-files"
 )
 
 const (
-	progressBarMinSize = 1024 * 1024 * 8 // show progress bar for outputs > 8MiB
-	offsetOptionName   = "offset"
-	lengthOptionName   = "length"
+	progressBarMinSize   = 1024 * 1024 * 8 // show progress bar for outputs > 8MiB
+	offsetOptionName     = "offset"
+	lengthOptionName     = "length"
+	decryptPwdOptionName = "decryptPassword"
 )
 
 var CatCmd = &cmds.Command{
@@ -32,6 +34,7 @@ var CatCmd = &cmds.Command{
 	Options: []cmds.Option{
 		cmds.Int64Option(offsetOptionName, "o", "Byte offset to begin reading from."),
 		cmds.Int64Option(lengthOptionName, "l", "Maximum number of bytes to read."),
+		cmds.StringOption(decryptPwdOptionName, "Decrypt password to decrypt the file").WithDefault(""),
 	},
 	Run: func(req *cmds.Request, res cmds.ResponseEmitter, env cmds.Environment) error {
 		api, err := cmdenv.GetApi(env, req)
@@ -69,10 +72,16 @@ var CatCmd = &cmds.Command{
 				return
 			}
 		*/
-
+		decryptPwdStr, _ := req.Options[decryptPwdOptionName].(string)
 		res.SetLength(length)
 		reader := io.MultiReader(readers...)
-
+		if len(decryptPwdStr) > 0 {
+			reader, err = crypto.AESDecryptFileReader(reader, decryptPwdStr)
+			if err != nil {
+				return err
+			}
+			fmt.Println("decrypt success")
+		}
 		// Since the reader returns the error that a block is missing, and that error is
 		// returned from io.Copy inside Emit, we need to take Emit errors and send
 		// them to the client. Usually we don't do that because it means the connection
