@@ -10,9 +10,9 @@ import (
 	bserv "github.com/IPFS-eX/go-blockservice"
 	core "github.com/IPFS-eX/go-ipfs-ex/core"
 	merkledag "github.com/ipfs/go-merkledag"
-	ft "github.com/ipfs/go-unixfs"
-	importer "github.com/ipfs/go-unixfs/importer"
-	uio "github.com/ipfs/go-unixfs/io"
+	ft "github.com/IPFS-eX/go-unixfs"
+	importer "github.com/IPFS-eX/go-unixfs/importer"
+	uio "github.com/IPFS-eX/go-unixfs/io"
 
 	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
 	cid "github.com/ipfs/go-cid"

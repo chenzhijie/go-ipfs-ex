@@ -10,7 +10,7 @@ import (
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	merkledag "github.com/ipfs/go-merkledag"
-	unixfs "github.com/ipfs/go-unixfs"
+	unixfs "github.com/IPFS-eX/go-unixfs"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
 

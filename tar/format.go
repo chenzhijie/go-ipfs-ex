@@ -11,8 +11,8 @@ import (
 	dag "github.com/ipfs/go-merkledag"
 	"github.com/ipfs/go-merkledag/dagutils"
 	path "github.com/ipfs/go-path"
-	importer "github.com/ipfs/go-unixfs/importer"
-	uio "github.com/ipfs/go-unixfs/io"
+	importer "github.com/IPFS-eX/go-unixfs/importer"
+	uio "github.com/IPFS-eX/go-unixfs/io"
 
 	chunker "github.com/ipfs/go-ipfs-chunker"
 	ipld "github.com/ipfs/go-ipld-format"

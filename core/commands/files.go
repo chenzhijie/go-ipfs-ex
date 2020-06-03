@@ -24,8 +24,8 @@ import (
 	cmds "github.com/ipfs/go-ipfs-cmds"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log"
-	"github.com/ipfs/go-mfs"
-	ft "github.com/ipfs/go-unixfs"
+	"github.com/IPFS-eX/go-mfs"
+	ft "github.com/IPFS-eX/go-unixfs"
 	mh "github.com/multiformats/go-multihash"
 )
 

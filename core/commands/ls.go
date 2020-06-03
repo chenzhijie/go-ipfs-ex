@@ -10,8 +10,8 @@ import (
 	cmdenv "github.com/IPFS-eX/go-ipfs-ex/core/commands/cmdenv"
 
 	cmds "github.com/ipfs/go-ipfs-cmds"
-	unixfs "github.com/ipfs/go-unixfs"
-	unixfs_pb "github.com/ipfs/go-unixfs/pb"
+	unixfs "github.com/IPFS-eX/go-unixfs"
+	unixfs_pb "github.com/IPFS-eX/go-unixfs/pb"
 	iface "github.com/IPFS-eX/interface-go-ipfs-core"
 	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"

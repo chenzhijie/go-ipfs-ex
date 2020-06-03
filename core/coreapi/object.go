@@ -16,7 +16,7 @@ import (
 	ipld "github.com/ipfs/go-ipld-format"
 	dag "github.com/IPFS-eX/go-merkledag"
 	"github.com/IPFS-eX/go-merkledag/dagutils"
-	ft "github.com/ipfs/go-unixfs"
+	ft "github.com/IPFS-eX/go-unixfs"
 	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
 	caopts "github.com/IPFS-eX/interface-go-ipfs-core/options"
 	ipath "github.com/IPFS-eX/interface-go-ipfs-core/path"

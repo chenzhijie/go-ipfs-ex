@@ -19,7 +19,7 @@ import (
 	"github.com/ipfs/go-ipfs-blockstore"
 	"github.com/IPFS-eX/go-ipfs-exchange-offline"
 	"github.com/ipfs/go-merkledag"
-	uio "github.com/ipfs/go-unixfs/io"
+	uio "github.com/IPFS-eX/go-unixfs/io"
 	"github.com/ipld/go-ipld-prime"
 	ipldfree "github.com/ipld/go-ipld-prime/impl/free"
 	cidlink "github.com/ipld/go-ipld-prime/linking/cid"

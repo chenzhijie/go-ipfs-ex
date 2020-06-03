@@ -18,7 +18,7 @@ import (
 	offline "github.com/IPFS-eX/go-ipfs-exchange-offline"
 	offroute "github.com/ipfs/go-ipfs-routing/offline"
 	"github.com/ipfs/go-path/resolver"
-	uio "github.com/ipfs/go-unixfs/io"
+	uio "github.com/IPFS-eX/go-unixfs/io"
 	"go.uber.org/fx"
 )
 

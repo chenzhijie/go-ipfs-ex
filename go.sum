@@ -27,6 +27,12 @@ github.com/IPFS-eX/go-merkledag v0.3.3-0.20200601102135-ff28562d6128 h1:W1jXfpE7
 github.com/IPFS-eX/go-merkledag v0.3.3-0.20200601102135-ff28562d6128/go.mod h1:bpz0a20CJEPL30mVPUkFYhJBbo4osQmkd7x52uPo4zQ=
 github.com/IPFS-eX/go-merkledag v0.3.3-0.20200602102203-e992c6fd83af h1:YfdSEwu2gnnFtf3TQMIHDp0+95KQ7bQ4KbLopSxM9Qk=
 github.com/IPFS-eX/go-merkledag v0.3.3-0.20200602102203-e992c6fd83af/go.mod h1:gXwZrTutWFwEOQho04IBaUzDXYQjbJUqR5a0kx8N0Co=
+github.com/IPFS-eX/go-mfs v0.1.3-0.20200603082841-6b76ca6ebce5 h1:zI967zDUu4t+8z+LszcoU/Uaxx1TgajkVooHo8HgcH4=
+github.com/IPFS-eX/go-mfs v0.1.3-0.20200603082841-6b76ca6ebce5/go.mod h1:xpJnKdKs7mLaTj+iuGJXT4tM88c3Y4RrW1zZpUwGU74=
+github.com/IPFS-eX/go-unixfs v0.2.5-0.20200602110243-09b4b04b304a h1:7SStkEoRt8spa1akkUNbXOOh41Nr+58QywBazYP9a90=
+github.com/IPFS-eX/go-unixfs v0.2.5-0.20200602110243-09b4b04b304a/go.mod h1:QrUhV2nNxz8LAluFcl7NEctPG85jmXmp2qoxZba74jc=
+github.com/IPFS-eX/go-unixfs v0.2.5-0.20200603082949-5ec47ca678ac h1:IJk/FoFOO/OUPJh93C/OSj68gaWwE96iY0p9hSC26qA=
+github.com/IPFS-eX/go-unixfs v0.2.5-0.20200603082949-5ec47ca678ac/go.mod h1:QrUhV2nNxz8LAluFcl7NEctPG85jmXmp2qoxZba74jc=
 github.com/IPFS-eX/interface-go-ipfs-core v0.3.1-0.20200601100447-002d290d98fc h1:vbsyDbkBuCNP55dgjCeK/geFYpoGppXuoev/42vOVhY=
 github.com/IPFS-eX/interface-go-ipfs-core v0.3.1-0.20200601100447-002d290d98fc/go.mod h1:dij0Q7EdwGG5xKi12VW/ClvSE0XnzUbO3gWBtRT36yw=
 github.com/Kubuxu/go-os-helper v0.0.1 h1:EJiD2VUQyh5A9hWJLmc6iWg6yIcJ7jpBcwC8GMGXfDk=

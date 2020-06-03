@@ -13,8 +13,8 @@ import (
 	core "github.com/IPFS-eX/go-ipfs-ex/core"
 	mdag "github.com/ipfs/go-merkledag"
 	path "github.com/ipfs/go-path"
-	ft "github.com/ipfs/go-unixfs"
-	uio "github.com/ipfs/go-unixfs/io"
+	ft "github.com/IPFS-eX/go-unixfs"
+	uio "github.com/IPFS-eX/go-unixfs/io"
 
 	fuse "bazil.org/fuse"
 	fs "bazil.org/fuse/fs"

@@ -13,14 +13,14 @@ import (
 	"strings"
 
 	dag "github.com/IPFS-eX/go-merkledag"
-	ft "github.com/ipfs/go-unixfs"
+	ft "github.com/IPFS-eX/go-unixfs"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 
 	fuse "bazil.org/fuse"
 	fs "bazil.org/fuse/fs"
 	cid "github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log"
-	mfs "github.com/ipfs/go-mfs"
+	mfs "github.com/IPFS-eX/go-mfs"
 	iface "github.com/IPFS-eX/interface-go-ipfs-core"
 	options "github.com/IPFS-eX/interface-go-ipfs-core/options"
 )

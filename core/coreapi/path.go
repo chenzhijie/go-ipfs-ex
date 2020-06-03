@@ -11,7 +11,7 @@ import (
 	ipld "github.com/ipfs/go-ipld-format"
 	ipfspath "github.com/ipfs/go-path"
 	"github.com/ipfs/go-path/resolver"
-	uio "github.com/ipfs/go-unixfs/io"
+	uio "github.com/IPFS-eX/go-unixfs/io"
 	coreiface "github.com/IPFS-eX/interface-go-ipfs-core"
 	path "github.com/IPFS-eX/interface-go-ipfs-core/path"
 )
